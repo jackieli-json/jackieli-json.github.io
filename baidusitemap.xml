@@ -9,29 +9,6 @@
     
     
     
-    
-  <url>
-    <loc>http://jackieli-json.github.io/notes/2016/08/24/2016-8-24-webvr/</loc>
-    <lastmod>2016-10-20T07:06:32.452Z</lastmod>
-    <data>
-        <display>
-        <title>浅谈 WebVR</title>
-        <pubTime>2016-08-24T12:00:00.000Z</pubTime>
-        
-        <tag>webvr</tag>
-         
-        <tag>vr</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>http://jackieli-json.github.io/notes/2016/08/24/2016-8-24-css-3d-panorama/</loc>
     <lastmod>2016-10-20T07:06:32.452Z</lastmod>
@@ -57,40 +34,16 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/10/09/HTML5-SopCast/</loc>
-    <lastmod>2016-10-20T07:06:32.451Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2016/08/24/2016-8-24-webvr/</loc>
+    <lastmod>2016-10-20T07:06:32.452Z</lastmod>
     <data>
         <display>
-        <title>H5直播起航</title>
-        <pubTime>2016-10-09T07:24:41.000Z</pubTime>
+        <title>浅谈 WebVR</title>
+        <pubTime>2016-08-24T12:00:00.000Z</pubTime>
         
-        <tag>H5</tag>
+        <tag>webvr</tag>
          
-        <tag>H5 视频直播 video</tag>
-         
-        <tag>HLS、RTMP协议</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://jackieli-json.github.io/notes/2016/10/13/vue2/</loc>
-    <lastmod>2016-10-20T07:06:32.451Z</lastmod>
-    <data>
-        <display>
-        <title>Vue2.0 新手完全填坑攻略——从环境搭建到服务器渲染</title>
-        <pubTime>2016-10-13T02:31:35.000Z</pubTime>
-        
-        <tag>NodeJS</tag>
-         
-        <tag>Vue</tag>
+        <tag>vr</tag>
          
          
            
@@ -127,16 +80,40 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/09/28/3d-touch/</loc>
-    <lastmod>2016-10-20T07:06:32.450Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2016/10/13/vue2/</loc>
+    <lastmod>2016-10-20T07:06:32.451Z</lastmod>
     <data>
         <display>
-        <title>在网页上实现 3D Touch 效果</title>
-        <pubTime>2016-09-28T08:00:00.000Z</pubTime>
+        <title>Vue2.0 新手完全填坑攻略——从环境搭建到服务器渲染</title>
+        <pubTime>2016-10-13T02:31:35.000Z</pubTime>
         
-        <tag>3dtouch</tag>
+        <tag>NodeJS</tag>
          
-        <tag>touchforcechange</tag>
+        <tag>Vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2016/10/09/HTML5-SopCast/</loc>
+    <lastmod>2016-10-20T07:06:32.451Z</lastmod>
+    <data>
+        <display>
+        <title>H5直播起航</title>
+        <pubTime>2016-10-09T07:24:41.000Z</pubTime>
+        
+        <tag>H5</tag>
+         
+        <tag>H5 视频直播 video</tag>
+         
+        <tag>HLS、RTMP协议</tag>
          
          
            
@@ -159,6 +136,28 @@
         <tag>体验报告</tag>
          
         <tag>WebVR</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2016/09/28/3d-touch/</loc>
+    <lastmod>2016-10-20T07:06:32.450Z</lastmod>
+    <data>
+        <display>
+        <title>在网页上实现 3D Touch 效果</title>
+        <pubTime>2016-09-28T08:00:00.000Z</pubTime>
+        
+        <tag>3dtouch</tag>
+         
+        <tag>touchforcechange</tag>
          
          
            
@@ -257,28 +256,6 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/08/16/nginx-https/</loc>
-    <lastmod>2016-10-20T07:06:32.447Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx 配置 HTTPS 服务器</title>
-        <pubTime>2016-08-16T09:40:23.000Z</pubTime>
-        
-        <tag>Nginx</tag>
-         
-        <tag>HTTPS</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://jackieli-json.github.io/notes/2016/08/09/command-line-development/</loc>
     <lastmod>2016-10-20T07:06:32.447Z</lastmod>
     <data>
@@ -298,6 +275,28 @@
            
              
               <breadCrumb title="NodeJS" url="http://jackieli-json.github.io/cates/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2016/08/16/nginx-https/</loc>
+    <lastmod>2016-10-20T07:06:32.447Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 配置 HTTPS 服务器</title>
+        <pubTime>2016-08-16T09:40:23.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+        <tag>HTTPS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -375,26 +374,6 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/07/25/vuejs-mailsign/</loc>
-    <lastmod>2016-10-20T07:06:32.428Z</lastmod>
-    <data>
-        <display>
-        <title>Vue实战－邮箱签名设计项目</title>
-        <pubTime>2016-07-25T02:24:35.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="项目总结" url="http://jackieli-json.github.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://jackieli-json.github.io/notes/2016/07/09/SVG-Symbol-component-practice/</loc>
     <lastmod>2016-10-20T07:06:32.428Z</lastmod>
     <data>
@@ -412,6 +391,26 @@
            
              
               <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2016/07/25/vuejs-mailsign/</loc>
+    <lastmod>2016-10-20T07:06:32.428Z</lastmod>
+    <data>
+        <display>
+        <title>Vue实战－邮箱签名设计项目</title>
+        <pubTime>2016-07-25T02:24:35.000Z</pubTime>
+        
+        <tag>Vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="项目总结" url="http://jackieli-json.github.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
           
         </display>
     </data>
@@ -463,18 +462,16 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/06/22/An-interesting-experience-on-console/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/06/24/Shadow-DOM/</loc>
     <lastmod>2016-10-20T07:06:32.426Z</lastmod>
     <data>
         <display>
-        <title>让console充满情怀</title>
-        <pubTime>2016-06-22T07:51:18.000Z</pubTime>
+        <title>神奇的Shadow DOM</title>
+        <pubTime>2016-06-24T02:39:04.000Z</pubTime>
         
-        <tag>console</tag>
+        <tag>Dom</tag>
          
-        <tag>占位符</tag>
-         
-        <tag>字符画</tag>
+        <tag>ShadowDom</tag>
          
          
            
@@ -487,16 +484,18 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/06/24/Shadow-DOM/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/06/22/An-interesting-experience-on-console/</loc>
     <lastmod>2016-10-20T07:06:32.426Z</lastmod>
     <data>
         <display>
-        <title>神奇的Shadow DOM</title>
-        <pubTime>2016-06-24T02:39:04.000Z</pubTime>
+        <title>让console充满情怀</title>
+        <pubTime>2016-06-22T07:51:18.000Z</pubTime>
         
-        <tag>Dom</tag>
+        <tag>console</tag>
          
-        <tag>ShadowDom</tag>
+        <tag>占位符</tag>
+         
+        <tag>字符画</tag>
          
          
            
@@ -553,30 +552,6 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/05/06/Guide-To-Tween-Animation/</loc>
-    <lastmod>2016-10-20T07:06:32.424Z</lastmod>
-    <data>
-        <display>
-        <title>CSS3动画之补间动画</title>
-        <pubTime>2016-05-06T03:03:09.000Z</pubTime>
-        
-        <tag>CSS3</tag>
-         
-        <tag>Aniamtion</tag>
-         
-        <tag>动画</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://jackieli-json.github.io/notes/2016/05/27/adobe-spark/</loc>
     <lastmod>2016-10-20T07:06:32.424Z</lastmod>
     <data>
@@ -606,6 +581,30 @@
         <title>CSS3动画之逐帧动画</title>
         <pubTime>2016-05-17T02:00:00.000Z</pubTime>
         
+        <tag>动画</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2016/05/06/Guide-To-Tween-Animation/</loc>
+    <lastmod>2016-10-20T07:06:32.424Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3动画之补间动画</title>
+        <pubTime>2016-05-06T03:03:09.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+        <tag>Aniamtion</tag>
+         
         <tag>动画</tag>
          
          
@@ -717,22 +716,16 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/04/13/Iris-Wipe/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/04/14/js-reduce/</loc>
     <lastmod>2016-10-20T07:06:32.420Z</lastmod>
     <data>
         <display>
-        <title>Canvas虹膜消除转场</title>
-        <pubTime>2016-04-13T02:59:20.000Z</pubTime>
+        <title>JavaScript中reduce()方法不完全指南</title>
+        <pubTime>2016-04-14T08:41:22.000Z</pubTime>
         
-        <tag>Canvas</tag>
+        <tag>JavaScript</tag>
          
-        <tag>转场</tag>
-         
-        <tag>触屏页转场</tag>
-         
-        <tag>消除转场</tag>
-         
-        <tag>虹膜</tag>
+        <tag>reduce</tag>
          
          
            
@@ -767,16 +760,22 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/04/14/js-reduce/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/04/13/Iris-Wipe/</loc>
     <lastmod>2016-10-20T07:06:32.420Z</lastmod>
     <data>
         <display>
-        <title>JavaScript中reduce()方法不完全指南</title>
-        <pubTime>2016-04-14T08:41:22.000Z</pubTime>
+        <title>Canvas虹膜消除转场</title>
+        <pubTime>2016-04-13T02:59:20.000Z</pubTime>
         
-        <tag>JavaScript</tag>
+        <tag>Canvas</tag>
          
-        <tag>reduce</tag>
+        <tag>转场</tag>
+         
+        <tag>触屏页转场</tag>
+         
+        <tag>消除转场</tag>
+         
+        <tag>虹膜</tag>
          
          
            
@@ -815,21 +814,31 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/03/30/cornerRadius-in-Storyboard/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/03/31/readable/</loc>
     <lastmod>2016-10-20T07:06:32.418Z</lastmod>
     <data>
         <display>
-        <title>如何优雅地在Storyboard中设置圆角</title>
-        <pubTime>2016-03-30T08:56:03.000Z</pubTime>
+        <title>提升代码的可读性系列(一)--基础篇</title>
+        <pubTime>2016-03-31T05:30:12.000Z</pubTime>
         
-        <tag>iOS</tag>
+        <tag>编码风格</tag>
          
-        <tag>Swift</tag>
+        <tag>变量</tag>
+         
+        <tag>UI松耦合</tag>
+         
+        <tag>错误处理</tag>
+         
+        <tag>创建对象</tag>
+         
+        <tag>可读性</tag>
+         
+        <tag>可维护性</tag>
          
          
            
              
-              <breadCrumb title="移动开发" url="http://jackieli-json.github.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -857,31 +866,21 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/03/31/readable/</loc>
+    <loc>http://jackieli-json.github.io/notes/2016/03/30/cornerRadius-in-Storyboard/</loc>
     <lastmod>2016-10-20T07:06:32.418Z</lastmod>
     <data>
         <display>
-        <title>提升代码的可读性系列(一)--基础篇</title>
-        <pubTime>2016-03-31T05:30:12.000Z</pubTime>
+        <title>如何优雅地在Storyboard中设置圆角</title>
+        <pubTime>2016-03-30T08:56:03.000Z</pubTime>
         
-        <tag>编码风格</tag>
+        <tag>iOS</tag>
          
-        <tag>变量</tag>
-         
-        <tag>UI松耦合</tag>
-         
-        <tag>错误处理</tag>
-         
-        <tag>创建对象</tag>
-         
-        <tag>可读性</tag>
-         
-        <tag>可维护性</tag>
+        <tag>Swift</tag>
          
          
            
              
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+              <breadCrumb title="移动开发" url="http://jackieli-json.github.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -993,6 +992,36 @@
 
     
   <url>
+    <loc>http://jackieli-json.github.io/notes/2016/03/01/createjs-get-started/</loc>
+    <lastmod>2016-10-20T07:06:32.415Z</lastmod>
+    <data>
+        <display>
+        <title>createjs开发入门</title>
+        <pubTime>2016-03-01T02:10:15.000Z</pubTime>
+        
+        <tag>createjs</tag>
+         
+        <tag>tweenjs</tag>
+         
+        <tag>zoe</tag>
+         
+        <tag>preloadjs</tag>
+         
+        <tag>soundjs</tag>
+         
+        <tag>easeljs</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jackieli-json.github.io/notes/2016/02/27/docker/</loc>
     <lastmod>2016-10-20T07:06:32.415Z</lastmod>
     <data>
@@ -1041,29 +1070,21 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2016/03/01/createjs-get-started/</loc>
-    <lastmod>2016-10-20T07:06:32.415Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2016/02/24/node-debug-in-production/</loc>
+    <lastmod>2016-10-20T07:06:32.414Z</lastmod>
     <data>
         <display>
-        <title>createjs开发入门</title>
-        <pubTime>2016-03-01T02:10:15.000Z</pubTime>
+        <title>Node 生产环境调试</title>
+        <pubTime>2016-02-24T04:25:35.000Z</pubTime>
         
-        <tag>createjs</tag>
+        <tag>调试</tag>
          
-        <tag>tweenjs</tag>
-         
-        <tag>zoe</tag>
-         
-        <tag>preloadjs</tag>
-         
-        <tag>soundjs</tag>
-         
-        <tag>easeljs</tag>
+        <tag>node</tag>
          
          
            
              
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+              <breadCrumb title="NodeJS" url="http://jackieli-json.github.io/cates/NodeJS/"/>
           
         </display>
     </data>
@@ -1078,11 +1099,11 @@
         <title>手把手教你搭建ngrok服务－轻松外网调试本机站点</title>
         <pubTime>2016-02-19T09:55:35.000Z</pubTime>
         
-        <tag>调试</tag>
-         
         <tag>ngrok</tag>
          
         <tag>反向代理</tag>
+         
+        <tag>调试</tag>
          
          
            
@@ -1112,28 +1133,6 @@
            
              
               <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://jackieli-json.github.io/notes/2016/02/24/node-debug-in-production/</loc>
-    <lastmod>2016-10-20T07:06:32.414Z</lastmod>
-    <data>
-        <display>
-        <title>Node 生产环境调试</title>
-        <pubTime>2016-02-24T04:25:35.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="NodeJS" url="http://jackieli-json.github.io/cates/NodeJS/"/>
           
         </display>
     </data>
@@ -1187,6 +1186,30 @@
 
     
   <url>
+    <loc>http://jackieli-json.github.io/notes/2016/01/14/introduction-to-JS-game-development/</loc>
+    <lastmod>2016-10-20T07:06:32.412Z</lastmod>
+    <data>
+        <display>
+        <title>js游戏开发初级入门</title>
+        <pubTime>2016-01-14T01:20:39.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>游戏</tag>
+         
+        <tag>五子棋</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jackieli-json.github.io/notes/2016/01/08/promise/</loc>
     <lastmod>2016-10-20T07:06:32.412Z</lastmod>
     <data>
@@ -1230,30 +1253,6 @@
            
              
               <breadCrumb title="项目总结" url="http://jackieli-json.github.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://jackieli-json.github.io/notes/2016/01/14/introduction-to-JS-game-development/</loc>
-    <lastmod>2016-10-20T07:06:32.412Z</lastmod>
-    <data>
-        <display>
-        <title>js游戏开发初级入门</title>
-        <pubTime>2016-01-14T01:20:39.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>游戏</tag>
-         
-        <tag>五子棋</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -1327,23 +1326,23 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/12/23/new-safari-9/</loc>
+    <loc>http://jackieli-json.github.io/notes/2015/12/29/ae/</loc>
     <lastmod>2016-10-20T07:06:32.409Z</lastmod>
     <data>
         <display>
-        <title>Safari 9.0的新特性</title>
-        <pubTime>2015-12-23T13:42:19.000Z</pubTime>
+        <title>初识Adobe After Effects效果制作</title>
+        <pubTime>2015-12-29T14:05:18.000Z</pubTime>
         
-        <tag>Safari 9.0</tag>
+        <tag>Adobe After Effects</tag>
          
-        <tag>iOS</tag>
+        <tag>AE</tag>
          
-        <tag>OS X</tag>
+        <tag>AE movie</tag>
          
          
            
              
-              <breadCrumb title="体验报告" url="http://jackieli-json.github.io/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -1373,23 +1372,23 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/12/29/ae/</loc>
+    <loc>http://jackieli-json.github.io/notes/2015/12/23/new-safari-9/</loc>
     <lastmod>2016-10-20T07:06:32.409Z</lastmod>
     <data>
         <display>
-        <title>初识Adobe After Effects效果制作</title>
-        <pubTime>2015-12-29T14:05:18.000Z</pubTime>
+        <title>Safari 9.0的新特性</title>
+        <pubTime>2015-12-23T13:42:19.000Z</pubTime>
         
-        <tag>Adobe After Effects</tag>
+        <tag>Safari 9.0</tag>
          
-        <tag>AE</tag>
+        <tag>iOS</tag>
          
-        <tag>AE movie</tag>
+        <tag>OS X</tag>
          
          
            
              
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+              <breadCrumb title="体验报告" url="http://jackieli-json.github.io/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
           
         </display>
     </data>
@@ -1412,6 +1411,26 @@
            
              
               <breadCrumb title="NodeJS" url="http://jackieli-json.github.io/cates/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2015/12/18/etymology-of-foobar/</loc>
+    <lastmod>2016-10-20T07:06:32.407Z</lastmod>
+    <data>
+        <display>
+        <title>What Does the Foo Mean</title>
+        <pubTime>2015-12-18T13:22:23.000Z</pubTime>
+        
+        <tag>Foo</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活玩乐" url="http://jackieli-json.github.io/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
           
         </display>
     </data>
@@ -1465,19 +1484,19 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/12/18/etymology-of-foobar/</loc>
-    <lastmod>2016-10-20T07:06:32.407Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2015/11/24/project-summary/</loc>
+    <lastmod>2016-10-20T07:06:32.406Z</lastmod>
     <data>
         <display>
-        <title>What Does the Foo Mean</title>
-        <pubTime>2015-12-18T13:22:23.000Z</pubTime>
+        <title>精致化页面重构</title>
+        <pubTime>2015-11-24T12:23:44.000Z</pubTime>
         
-        <tag>Foo</tag>
+        <tag>summary</tag>
          
          
            
              
-              <breadCrumb title="生活玩乐" url="http://jackieli-json.github.io/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
+              <breadCrumb title="项目总结" url="http://jackieli-json.github.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
           
         </display>
     </data>
@@ -1505,19 +1524,21 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/11/24/project-summary/</loc>
-    <lastmod>2016-10-20T07:06:32.406Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2015/11/23/css3-animation-to-movie-part_1/</loc>
+    <lastmod>2016-10-20T07:06:32.405Z</lastmod>
     <data>
         <display>
-        <title>精致化页面重构</title>
-        <pubTime>2015-11-24T12:23:44.000Z</pubTime>
+        <title>以电影之眼看CSS3动画（一）</title>
+        <pubTime>2015-11-23T09:27:00.000Z</pubTime>
         
-        <tag>summary</tag>
+        <tag>CSS3</tag>
+         
+        <tag>Animation</tag>
          
          
            
              
-              <breadCrumb title="项目总结" url="http://jackieli-json.github.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
           
         </display>
     </data>
@@ -1547,16 +1568,14 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/11/23/css3-animation-to-movie-part_1/</loc>
-    <lastmod>2016-10-20T07:06:32.405Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2015/11/20/svg-I-know/</loc>
+    <lastmod>2016-10-20T07:06:32.404Z</lastmod>
     <data>
         <display>
-        <title>以电影之眼看CSS3动画（一）</title>
-        <pubTime>2015-11-23T09:27:00.000Z</pubTime>
+        <title>SVG I Know</title>
+        <pubTime>2015-11-20T03:30:45.000Z</pubTime>
         
-        <tag>CSS3</tag>
-         
-        <tag>Animation</tag>
+        <tag>svg</tag>
          
          
            
@@ -1597,26 +1616,6 @@
         <pubTime>2015-11-17T04:44:25.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://jackieli-json.github.io/notes/2015/11/20/svg-I-know/</loc>
-    <lastmod>2016-10-20T07:06:32.404Z</lastmod>
-    <data>
-        <display>
-        <title>SVG I Know</title>
-        <pubTime>2015-11-20T03:30:45.000Z</pubTime>
-        
-        <tag>svg</tag>
          
          
            
@@ -1691,28 +1690,6 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/11/02/flash-canvas/</loc>
-    <lastmod>2016-10-20T07:06:32.402Z</lastmod>
-    <data>
-        <display>
-        <title>使用Adobe FLASH CC制作Canvas动画</title>
-        <pubTime>2015-11-02T10:44:25.000Z</pubTime>
-        
-        <tag>Flash</tag>
-         
-        <tag>Canvas</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://jackieli-json.github.io/notes/2015/10/26/zepto-cors/</loc>
     <lastmod>2016-10-20T07:06:32.402Z</lastmod>
     <data>
@@ -1735,14 +1712,16 @@
 
     
   <url>
-    <loc>http://jackieli-json.github.io/notes/2015/10/16/vim-list/</loc>
-    <lastmod>2016-10-20T07:06:32.401Z</lastmod>
+    <loc>http://jackieli-json.github.io/notes/2015/11/02/flash-canvas/</loc>
+    <lastmod>2016-10-20T07:06:32.402Z</lastmod>
     <data>
         <display>
-        <title>我的vim二三事</title>
-        <pubTime>2015-10-16T02:24:35.000Z</pubTime>
+        <title>使用Adobe FLASH CC制作Canvas动画</title>
+        <pubTime>2015-11-02T10:44:25.000Z</pubTime>
         
-        <tag>Web开发</tag>
+        <tag>Flash</tag>
+         
+        <tag>Canvas</tag>
          
          
            
@@ -1785,6 +1764,26 @@
         <tag>translate3d</tag>
          
         <tag>zindex</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="http://jackieli-json.github.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jackieli-json.github.io/notes/2015/10/16/vim-list/</loc>
+    <lastmod>2016-10-20T07:06:32.401Z</lastmod>
+    <data>
+        <display>
+        <title>我的vim二三事</title>
+        <pubTime>2015-10-16T02:24:35.000Z</pubTime>
+        
+        <tag>Web开发</tag>
          
          
            

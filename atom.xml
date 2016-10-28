@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Aotu.io</title>
-  <subtitle>凹凸实验室</subtitle>
+  <title>西门互联网</title>
+  <subtitle>西门互联网</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://aotu.io/"/>
+  <link href="https://demo.lilidong.cn/"/>
   <updated>2016-10-20T07:06:32.451Z</updated>
-  <id>https://aotu.io/</id>
+  <id>https://demo.lilidong.cn/</id>
   
   <author>
-    <name>凹凸实验室</name>
+    <name>西门互联</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>CSS3 Mask 安利报告</title>
-    <link href="https://aotu.io/notes/2016/10/19/2016-10-19-css3-mask/"/>
-    <id>https://aotu.io/notes/2016/10/19/2016-10-19-css3-mask/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/10/19/2016-10-19-css3-mask/"/>
+    <id>https://demo.lilidong.cn/notes/2016/10/19/2016-10-19-css3-mask/</id>
     <published>2016-10-19T10:48:16.000Z</published>
     <updated>2016-10-20T07:06:32.451Z</updated>
     
@@ -108,7 +108,7 @@
 <li><code>mask-mode</code> 当前没有任何浏览器支持。</li>
 <li><code>-webkit-mask-composite</code> 属性值与W3C不同， 参见：『 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-composite" target="_blank" rel="external">-webkit-mask-composite - CSS | MDN</a>』与 『<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite" target="_blank" rel="external">mask-composite - CSS | MDN</a>』</li>
 </ul>
-<h2 id="2-图标的一个便捷选项"><a href="#2-图标的一个便捷选项" class="headerlink" title="2. 图标的一个便捷选项"></a>2. 图标的一个便捷选项</h2><p>图标的主流方案有两种：Icon-Font 和 SVG Sprite。凹凸实验室推荐使用 SVG Sprite，具体参见 @高大师 的大作『 <a href="https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/">拥抱Web设计新趋势：SVG Sprites实践应用</a>』。</p>
+<h2 id="2-图标的一个便捷选项"><a href="#2-图标的一个便捷选项" class="headerlink" title="2. 图标的一个便捷选项"></a>2. 图标的一个便捷选项</h2><p>图标的主流方案有两种：Icon-Font 和 SVG Sprite。凹凸实验室推荐使用 SVG Sprite，具体参见 @高大师 的大作『 <a href="https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/" target="_blank" rel="external">拥抱Web设计新趋势：SVG Sprites实践应用</a>』。</p>
 <p>笔者看来，这两种方案存在一个前提：<strong>图标必须是矢量图</strong>。这其实是道门槛，不是所有团队/个人都跨得过去的。<br>本节将介绍一个低成本的方案：<strong>Mask Icon</strong></p>
 <h3 id="2-1-Mask-Icon"><a href="#2-1-Mask-Icon" class="headerlink" title="2.1 Mask Icon"></a>2.1 Mask Icon</h3><p>素材icon.png :  <img src="//misc.aotu.io/leeenx/form_sicon_select.png" alt="原始png icon"></p>
 <p>SASS源码：<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 生成 黑、红、黄、蓝四个 icon。</span></div><div class="line"><span class="selector-class">.icon</span> &#123;</div><div class="line">	<span class="attribute">display</span>: inline-block;</div><div class="line">	<span class="attribute">width</span>: <span class="number">30px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</div><div class="line">	<span class="attribute">background-color</span>: black; <span class="comment">// 控制图标的颜色</span></div><div class="line">	-webkit-<span class="attribute">mask</span>: url(images/icon.png) <span class="number">0</span> <span class="number">0</span> no-repeat;</div><div class="line">	-webkit-<span class="attribute">mask</span>-size: <span class="number">100%</span> <span class="number">100%</span>;</div><div class="line">	&amp;<span class="selector-class">.red</span> &#123;</div><div class="line">		<span class="attribute">background-color</span>: red;</div><div class="line">	&#125;</div><div class="line">	&amp;<span class="selector-class">.yellow</span> &#123;</div><div class="line">		<span class="attribute">background-color</span>: yellow;</div><div class="line">	&#125;</div><div class="line">	&amp;<span class="selector-class">.blue</span> &#123;</div><div class="line">		<span class="attribute">background-color</span>: blue;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -361,7 +361,7 @@
 </table>
 <p><strong>测试结论</strong><br><code>mask-border</code> 在移动端的兼容性很好，推荐使用。</p>
 <hr>
-<h2 id="5-参考资料"><a href="#5-参考资料" class="headerlink" title="5. 参考资料"></a>5. 参考资料</h2><p><a href="https://webkit.org/blog/181/css-masks/" target="_blank" rel="external">CSS Masks</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-composite" target="_blank" rel="external">-webkit-mask-composite - CSS | MDN</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite" target="_blank" rel="external">mask-composite - CSS | MDN</a><br><a href="https://www.w3.org/TR/css-masking-1/" target="_blank" rel="external">CSS Masking Module Level 1</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask" target="_blank" rel="external">mask - CSS | MDN</a><br><a href="https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/">拥抱Web设计新趋势：SVG Sprites实践应用</a><br><a href="http://edu.yjbys.com/B658165160951/news/nres5691.html" target="_blank" rel="external">ICON-FONT图标字体的四类制作方法</a><br><a href="http://www.zhangxinxu.com/wordpress/2014/10/currentcolor-css3-powerful-css-keyword/" target="_blank" rel="external">currentColor-CSS3超高校级好用CSS变量</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-box-image" target="_blank" rel="external">-webkit-mask-box-image - CSS | MDN</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-image" target="_blank" rel="external">border-image - CSS | MDN</a></p>
+<h2 id="5-参考资料"><a href="#5-参考资料" class="headerlink" title="5. 参考资料"></a>5. 参考资料</h2><p><a href="https://webkit.org/blog/181/css-masks/" target="_blank" rel="external">CSS Masks</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-composite" target="_blank" rel="external">-webkit-mask-composite - CSS | MDN</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite" target="_blank" rel="external">mask-composite - CSS | MDN</a><br><a href="https://www.w3.org/TR/css-masking-1/" target="_blank" rel="external">CSS Masking Module Level 1</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask" target="_blank" rel="external">mask - CSS | MDN</a><br><a href="https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/" target="_blank" rel="external">拥抱Web设计新趋势：SVG Sprites实践应用</a><br><a href="http://edu.yjbys.com/B658165160951/news/nres5691.html" target="_blank" rel="external">ICON-FONT图标字体的四类制作方法</a><br><a href="http://www.zhangxinxu.com/wordpress/2014/10/currentcolor-css3-powerful-css-keyword/" target="_blank" rel="external">currentColor-CSS3超高校级好用CSS变量</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-box-image" target="_blank" rel="external">-webkit-mask-box-image - CSS | MDN</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-image" target="_blank" rel="external">border-image - CSS | MDN</a></p>
 ]]></content>
     
     <summary type="html">
@@ -371,21 +371,21 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="css3 mask" scheme="https://aotu.io/tags/css3-mask/"/>
+      <category term="css3 mask" scheme="https://demo.lilidong.cn/tags/css3-mask/"/>
     
-      <category term="css3 mask-border" scheme="https://aotu.io/tags/css3-mask-border/"/>
+      <category term="css3 mask-border" scheme="https://demo.lilidong.cn/tags/css3-mask-border/"/>
     
-      <category term="css3 蒙层" scheme="https://aotu.io/tags/css3-%E8%92%99%E5%B1%82/"/>
+      <category term="css3 蒙层" scheme="https://demo.lilidong.cn/tags/css3-%E8%92%99%E5%B1%82/"/>
     
   </entry>
   
   <entry>
     <title>Vue2.0 新手完全填坑攻略——从环境搭建到服务器渲染</title>
-    <link href="https://aotu.io/notes/2016/10/13/vue2/"/>
-    <id>https://aotu.io/notes/2016/10/13/vue2/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/10/13/vue2/"/>
+    <id>https://demo.lilidong.cn/notes/2016/10/13/vue2/</id>
     <published>2016-10-13T02:31:35.000Z</published>
     <updated>2016-10-20T07:06:32.451Z</updated>
     
@@ -633,19 +633,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="NodeJS" scheme="https://aotu.io/tags/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/tags/NodeJS/"/>
     
-      <category term="Vue" scheme="https://aotu.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://demo.lilidong.cn/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>H5直播起航</title>
-    <link href="https://aotu.io/notes/2016/10/09/HTML5-SopCast/"/>
-    <id>https://aotu.io/notes/2016/10/09/HTML5-SopCast/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/10/09/HTML5-SopCast/"/>
+    <id>https://demo.lilidong.cn/notes/2016/10/09/HTML5-SopCast/</id>
     <published>2016-10-09T07:24:41.000Z</published>
     <updated>2016-10-20T07:06:32.451Z</updated>
     
@@ -772,21 +772,21 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="H5" scheme="https://aotu.io/tags/H5/"/>
+      <category term="H5" scheme="https://demo.lilidong.cn/tags/H5/"/>
     
-      <category term="H5 视频直播 video" scheme="https://aotu.io/tags/H5-%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD-video/"/>
+      <category term="H5 视频直播 video" scheme="https://demo.lilidong.cn/tags/H5-%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD-video/"/>
     
-      <category term="HLS、RTMP协议" scheme="https://aotu.io/tags/HLS%E3%80%81RTMP%E5%8D%8F%E8%AE%AE/"/>
+      <category term="HLS、RTMP协议" scheme="https://demo.lilidong.cn/tags/HLS%E3%80%81RTMP%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   
   <entry>
     <title>A-Frame WebVR试玩报告</title>
-    <link href="https://aotu.io/notes/2016/10/08/aframe/"/>
-    <id>https://aotu.io/notes/2016/10/08/aframe/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/10/08/aframe/"/>
+    <id>https://demo.lilidong.cn/notes/2016/10/08/aframe/</id>
     <published>2016-10-08T03:05:14.000Z</published>
     <updated>2016-10-20T07:06:32.450Z</updated>
     
@@ -907,19 +907,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="体验报告" scheme="https://aotu.io/tags/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+      <category term="体验报告" scheme="https://demo.lilidong.cn/tags/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
     
-      <category term="WebVR" scheme="https://aotu.io/tags/WebVR/"/>
+      <category term="WebVR" scheme="https://demo.lilidong.cn/tags/WebVR/"/>
     
   </entry>
   
   <entry>
     <title>在网页上实现 3D Touch 效果</title>
-    <link href="https://aotu.io/notes/2016/09/28/3d-touch/"/>
-    <id>https://aotu.io/notes/2016/09/28/3d-touch/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/09/28/3d-touch/"/>
+    <id>https://demo.lilidong.cn/notes/2016/09/28/3d-touch/</id>
     <published>2016-09-28T08:00:00.000Z</published>
     <updated>2016-10-20T07:06:32.450Z</updated>
     
@@ -971,19 +971,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="3dtouch" scheme="https://aotu.io/tags/3dtouch/"/>
+      <category term="3dtouch" scheme="https://demo.lilidong.cn/tags/3dtouch/"/>
     
-      <category term="touchforcechange" scheme="https://aotu.io/tags/touchforcechange/"/>
+      <category term="touchforcechange" scheme="https://demo.lilidong.cn/tags/touchforcechange/"/>
     
   </entry>
   
   <entry>
     <title>HTTP 缓存</title>
-    <link href="https://aotu.io/notes/2016/09/22/http-caching/"/>
-    <id>https://aotu.io/notes/2016/09/22/http-caching/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/09/22/http-caching/"/>
+    <id>https://demo.lilidong.cn/notes/2016/09/22/http-caching/</id>
     <published>2016-09-22T08:38:12.000Z</published>
     <updated>2016-10-20T07:06:32.449Z</updated>
     
@@ -1051,17 +1051,17 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="HTTP Cache 缓存 优化" scheme="https://aotu.io/tags/HTTP-Cache-%E7%BC%93%E5%AD%98-%E4%BC%98%E5%8C%96/"/>
+      <category term="HTTP Cache 缓存 优化" scheme="https://demo.lilidong.cn/tags/HTTP-Cache-%E7%BC%93%E5%AD%98-%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>通过 Babel 使用 ES6 的 import</title>
-    <link href="https://aotu.io/notes/2016/09/22/es6-import-with-babel/"/>
-    <id>https://aotu.io/notes/2016/09/22/es6-import-with-babel/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/09/22/es6-import-with-babel/"/>
+    <id>https://demo.lilidong.cn/notes/2016/09/22/es6-import-with-babel/</id>
     <published>2016-09-22T07:28:59.000Z</published>
     <updated>2016-10-20T07:06:32.449Z</updated>
     
@@ -1140,19 +1140,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="ES6" scheme="https://aotu.io/tags/ES6/"/>
+      <category term="ES6" scheme="https://demo.lilidong.cn/tags/ES6/"/>
     
-      <category term="Babel" scheme="https://aotu.io/tags/Babel/"/>
+      <category term="Babel" scheme="https://demo.lilidong.cn/tags/Babel/"/>
     
   </entry>
   
   <entry>
     <title>写给新人的call、apply、bind</title>
-    <link href="https://aotu.io/notes/2016/09/02/Different-Binding/"/>
-    <id>https://aotu.io/notes/2016/09/02/Different-Binding/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/09/02/Different-Binding/"/>
+    <id>https://demo.lilidong.cn/notes/2016/09/02/Different-Binding/</id>
     <published>2016-09-02T06:56:23.000Z</published>
     <updated>2016-10-20T07:06:32.448Z</updated>
     
@@ -1206,19 +1206,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Git" scheme="https://aotu.io/tags/Git/"/>
+      <category term="Git" scheme="https://demo.lilidong.cn/tags/Git/"/>
     
-      <category term="Fork" scheme="https://aotu.io/tags/Fork/"/>
+      <category term="Fork" scheme="https://demo.lilidong.cn/tags/Fork/"/>
     
   </entry>
   
   <entry>
     <title>SeaJS从入门到原理</title>
-    <link href="https://aotu.io/notes/2016/08/29/SeaJs-From-Entry-To-The-Principle/"/>
-    <id>https://aotu.io/notes/2016/08/29/SeaJs-From-Entry-To-The-Principle/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/29/SeaJs-From-Entry-To-The-Principle/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/29/SeaJs-From-Entry-To-The-Principle/</id>
     <published>2016-08-29T05:55:34.000Z</published>
     <updated>2016-10-20T07:06:32.448Z</updated>
     
@@ -1327,19 +1327,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="seajs" scheme="https://aotu.io/tags/seajs/"/>
+      <category term="seajs" scheme="https://demo.lilidong.cn/tags/seajs/"/>
     
-      <category term="模块加载" scheme="https://aotu.io/tags/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD/"/>
+      <category term="模块加载" scheme="https://demo.lilidong.cn/tags/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>浅谈 WebVR</title>
-    <link href="https://aotu.io/notes/2016/08/24/2016-8-24-webvr/"/>
-    <id>https://aotu.io/notes/2016/08/24/2016-8-24-webvr/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/24/2016-8-24-webvr/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/24/2016-8-24-webvr/</id>
     <published>2016-08-24T12:00:00.000Z</published>
     <updated>2016-10-20T07:06:32.452Z</updated>
     
@@ -1437,19 +1437,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="webvr" scheme="https://aotu.io/tags/webvr/"/>
+      <category term="webvr" scheme="https://demo.lilidong.cn/tags/webvr/"/>
     
-      <category term="vr" scheme="https://aotu.io/tags/vr/"/>
+      <category term="vr" scheme="https://demo.lilidong.cn/tags/vr/"/>
     
   </entry>
   
   <entry>
     <title>CSS 3D Panorama - 淘宝造物节技术剖析</title>
-    <link href="https://aotu.io/notes/2016/08/24/2016-8-24-css-3d-panorama/"/>
-    <id>https://aotu.io/notes/2016/08/24/2016-8-24-css-3d-panorama/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/24/2016-8-24-css-3d-panorama/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/24/2016-8-24-css-3d-panorama/</id>
     <published>2016-08-24T10:58:35.000Z</published>
     <updated>2016-10-20T07:06:32.452Z</updated>
     
@@ -1533,21 +1533,21 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS" scheme="https://aotu.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://demo.lilidong.cn/tags/CSS/"/>
     
-      <category term="panorama" scheme="https://aotu.io/tags/panorama/"/>
+      <category term="panorama" scheme="https://demo.lilidong.cn/tags/panorama/"/>
     
-      <category term="3d" scheme="https://aotu.io/tags/3d/"/>
+      <category term="3d" scheme="https://demo.lilidong.cn/tags/3d/"/>
     
   </entry>
   
   <entry>
     <title>Nginx 配置 HTTPS 服务器</title>
-    <link href="https://aotu.io/notes/2016/08/16/nginx-https/"/>
-    <id>https://aotu.io/notes/2016/08/16/nginx-https/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/16/nginx-https/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/16/nginx-https/</id>
     <published>2016-08-16T09:40:23.000Z</published>
     <updated>2016-10-20T07:06:32.447Z</updated>
     
@@ -1730,19 +1730,19 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Nginx" scheme="https://aotu.io/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://demo.lilidong.cn/tags/Nginx/"/>
     
-      <category term="HTTPS" scheme="https://aotu.io/tags/HTTPS/"/>
+      <category term="HTTPS" scheme="https://demo.lilidong.cn/tags/HTTPS/"/>
     
   </entry>
   
   <entry>
     <title>跟着老司机玩转Node命令行</title>
-    <link href="https://aotu.io/notes/2016/08/09/command-line-development/"/>
-    <id>https://aotu.io/notes/2016/08/09/command-line-development/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/09/command-line-development/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/09/command-line-development/</id>
     <published>2016-08-09T01:30:12.000Z</published>
     <updated>2016-10-20T07:06:32.447Z</updated>
     
@@ -1833,23 +1833,23 @@
     
     </summary>
     
-      <category term="NodeJS" scheme="https://aotu.io/cates/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/cates/NodeJS/"/>
     
     
-      <category term="NodeJS" scheme="https://aotu.io/tags/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/tags/NodeJS/"/>
     
-      <category term="命令行" scheme="https://aotu.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <category term="命令行" scheme="https://demo.lilidong.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="前端工程化" scheme="https://aotu.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+      <category term="前端工程化" scheme="https://demo.lilidong.cn/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
     
-      <category term="老司机" scheme="https://aotu.io/tags/%E8%80%81%E5%8F%B8%E6%9C%BA/"/>
+      <category term="老司机" scheme="https://demo.lilidong.cn/tags/%E8%80%81%E5%8F%B8%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>带机器人上设计学校</title>
-    <link href="https://aotu.io/notes/2016/08/05/robot-design-school/"/>
-    <id>https://aotu.io/notes/2016/08/05/robot-design-school/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/08/05/robot-design-school/"/>
+    <id>https://demo.lilidong.cn/notes/2016/08/05/robot-design-school/</id>
     <published>2016-08-05T02:09:24.000Z</published>
     <updated>2016-10-20T07:06:32.446Z</updated>
     
@@ -2005,25 +2005,25 @@
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Typography" scheme="https://aotu.io/tags/Typography/"/>
+      <category term="Typography" scheme="https://demo.lilidong.cn/tags/Typography/"/>
     
-      <category term="Type design" scheme="https://aotu.io/tags/Type-design/"/>
+      <category term="Type design" scheme="https://demo.lilidong.cn/tags/Type-design/"/>
     
-      <category term="字体设计" scheme="https://aotu.io/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E8%AE%A1/"/>
+      <category term="字体设计" scheme="https://demo.lilidong.cn/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="人工智能" scheme="https://aotu.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+      <category term="人工智能" scheme="https://demo.lilidong.cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
-      <category term="算法" scheme="https://aotu.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://demo.lilidong.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>2016年夏季蜜桃通缉令</title>
-    <link href="https://aotu.io/notes/2016/07/28/o2-wants-you/"/>
-    <id>https://aotu.io/notes/2016/07/28/o2-wants-you/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/28/o2-wants-you/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/28/o2-wants-you/</id>
     <published>2016-07-28T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.429Z</updated>
     
@@ -2086,17 +2086,17 @@ body {
     
     </summary>
     
-      <category term="生活玩乐" scheme="https://aotu.io/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
+      <category term="生活玩乐" scheme="https://demo.lilidong.cn/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
     
     
-      <category term="招贤纳士" scheme="https://aotu.io/tags/%E6%8B%9B%E8%B4%A4%E7%BA%B3%E5%A3%AB/"/>
+      <category term="招贤纳士" scheme="https://demo.lilidong.cn/tags/%E6%8B%9B%E8%B4%A4%E7%BA%B3%E5%A3%AB/"/>
     
   </entry>
   
   <entry>
     <title>Vue实战－邮箱签名设计项目</title>
-    <link href="https://aotu.io/notes/2016/07/25/vuejs-mailsign/"/>
-    <id>https://aotu.io/notes/2016/07/25/vuejs-mailsign/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/25/vuejs-mailsign/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/25/vuejs-mailsign/</id>
     <published>2016-07-25T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.428Z</updated>
     
@@ -2167,17 +2167,17 @@ body {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="Vue" scheme="https://aotu.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://demo.lilidong.cn/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>我们是如何做好前端工程化和静态资源管理</title>
-    <link href="https://aotu.io/notes/2016/07/19/A-little-exploration-of-front-end-engineering/"/>
-    <id>https://aotu.io/notes/2016/07/19/A-little-exploration-of-front-end-engineering/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/19/A-little-exploration-of-front-end-engineering/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/19/A-little-exploration-of-front-end-engineering/</id>
     <published>2016-07-19T13:12:48.000Z</published>
     <updated>2016-10-20T07:06:32.428Z</updated>
     
@@ -2235,7 +2235,7 @@ body {
 <p>我们会在静态资源预加载平台上配置每一个页面id对应需要预加载页面资源的id，然后系统通过读取资源依赖表获取到所需要预加载的静态资源，生成预加载资源列表文件，再将文件推送到线上服务器，通过页面挂载js请求获取预加载资源列表，随后静默加载资源。在有了资源依赖表后，我们可以准确地分析到每一个页面引用资源的请求，就可以很好地实现静态资源预加载的功能。</p>
 <p><img src="//misc.aotu.io/luckyadam/athena/preload.jpg" alt="静态资源预加载"></p>
 <h2 id="Athena"><a href="#Athena" class="headerlink" title="Athena"></a>Athena</h2><p>工欲善其事，必现利其器。为了实现我们对提升开发效率和产品性能的诉求，我们提出了比较完整的工程化解决方案以及对应的工具<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>。</p>
-<p><a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>是由京东【凹凸实验室】(<a href="http://aotu.io">aotu.io</a>) 推出的一套项目流程工具，通过<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>，我们可以很流程地跑完整个开发流程。<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>分为两部分，一是本地自动化编译工具，二是资源管理平台，其架构如下</p>
+<p><a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>是由京东【凹凸实验室】(<a href="http://aotu.io" target="_blank" rel="external">aotu.io</a>) 推出的一套项目流程工具，通过<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>，我们可以很流程地跑完整个开发流程。<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>分为两部分，一是本地自动化编译工具，二是资源管理平台，其架构如下</p>
 <p><img src="//misc.aotu.io/luckyadam/athena/athena.jpg" alt="Athena"></p>
 <h3 id="本地自动化工具"><a href="#本地自动化工具" class="headerlink" title="本地自动化工具"></a>本地自动化工具</h3><p>Athena本地编译工具是一个基于NodeJs的命令行工具，通过执行命令的方式来优化我们的开发流程，目前Athena的主要功能有</p>
 <ul>
@@ -2361,19 +2361,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Front-end" scheme="https://aotu.io/tags/Front-end/"/>
+      <category term="Front-end" scheme="https://demo.lilidong.cn/tags/Front-end/"/>
     
-      <category term="Engineering" scheme="https://aotu.io/tags/Engineering/"/>
+      <category term="Engineering" scheme="https://demo.lilidong.cn/tags/Engineering/"/>
     
   </entry>
   
   <entry>
     <title>拥抱Web设计新趋势：SVG Sprites实践应用</title>
-    <link href="https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/"/>
-    <id>https://aotu.io/notes/2016/07/09/SVG-Symbol-component-practice/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/09/SVG-Symbol-component-practice/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/09/SVG-Symbol-component-practice/</id>
     <published>2016-07-09T10:01:17.000Z</published>
     <updated>2016-10-20T07:06:32.428Z</updated>
     
@@ -2487,21 +2487,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="svg" scheme="https://aotu.io/tags/svg/"/>
+      <category term="svg" scheme="https://demo.lilidong.cn/tags/svg/"/>
     
-      <category term="svg symbol" scheme="https://aotu.io/tags/svg-symbol/"/>
+      <category term="svg symbol" scheme="https://demo.lilidong.cn/tags/svg-symbol/"/>
     
-      <category term="svg sprites" scheme="https://aotu.io/tags/svg-sprites/"/>
+      <category term="svg sprites" scheme="https://demo.lilidong.cn/tags/svg-sprites/"/>
     
   </entry>
   
   <entry>
     <title>feWorkflow - 使用electron, react, redux, immutable构建桌面App</title>
-    <link href="https://aotu.io/notes/2016/07/05/fe-workflow/"/>
-    <id>https://aotu.io/notes/2016/07/05/fe-workflow/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/05/fe-workflow/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/05/fe-workflow/</id>
     <published>2016-07-05T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.427Z</updated>
     
@@ -2655,19 +2655,19 @@ body {
     
     </summary>
     
-      <category term="NodeJS" scheme="https://aotu.io/cates/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/cates/NodeJS/"/>
     
     
-      <category term="React" scheme="https://aotu.io/tags/React/"/>
+      <category term="React" scheme="https://demo.lilidong.cn/tags/React/"/>
     
-      <category term="Electron" scheme="https://aotu.io/tags/Electron/"/>
+      <category term="Electron" scheme="https://demo.lilidong.cn/tags/Electron/"/>
     
   </entry>
   
   <entry>
     <title>第二界HiFSD分享会PPT讲义下载分享</title>
-    <link href="https://aotu.io/notes/2016/07/03/HIFSD2-Summary/"/>
-    <id>https://aotu.io/notes/2016/07/03/HIFSD2-Summary/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/07/03/HIFSD2-Summary/"/>
+    <id>https://demo.lilidong.cn/notes/2016/07/03/HIFSD2-Summary/</id>
     <published>2016-07-03T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.427Z</updated>
     
@@ -2701,19 +2701,19 @@ body {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="HiFSD" scheme="https://aotu.io/tags/HiFSD/"/>
+      <category term="HiFSD" scheme="https://demo.lilidong.cn/tags/HiFSD/"/>
     
-      <category term="分享会" scheme="https://aotu.io/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+      <category term="分享会" scheme="https://demo.lilidong.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
   </entry>
   
   <entry>
     <title>神奇的Shadow DOM</title>
-    <link href="https://aotu.io/notes/2016/06/24/Shadow-DOM/"/>
-    <id>https://aotu.io/notes/2016/06/24/Shadow-DOM/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/06/24/Shadow-DOM/"/>
+    <id>https://demo.lilidong.cn/notes/2016/06/24/Shadow-DOM/</id>
     <published>2016-06-24T02:39:04.000Z</published>
     <updated>2016-10-20T07:06:32.426Z</updated>
     
@@ -2784,19 +2784,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Dom" scheme="https://aotu.io/tags/Dom/"/>
+      <category term="Dom" scheme="https://demo.lilidong.cn/tags/Dom/"/>
     
-      <category term="ShadowDom" scheme="https://aotu.io/tags/ShadowDom/"/>
+      <category term="ShadowDom" scheme="https://demo.lilidong.cn/tags/ShadowDom/"/>
     
   </entry>
   
   <entry>
     <title>探究WebP一些事儿</title>
-    <link href="https://aotu.io/notes/2016/06/23/explore-something-of-webp/"/>
-    <id>https://aotu.io/notes/2016/06/23/explore-something-of-webp/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/06/23/explore-something-of-webp/"/>
+    <id>https://demo.lilidong.cn/notes/2016/06/23/explore-something-of-webp/</id>
     <published>2016-06-23T02:43:31.000Z</published>
     <updated>2016-10-20T07:06:32.425Z</updated>
     
@@ -2870,19 +2870,19 @@ body {
     
     </summary>
     
-      <category term="性能优化" scheme="https://aotu.io/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://demo.lilidong.cn/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="WebP" scheme="https://aotu.io/tags/WebP/"/>
+      <category term="WebP" scheme="https://demo.lilidong.cn/tags/WebP/"/>
     
-      <category term="图片" scheme="https://aotu.io/tags/%E5%9B%BE%E7%89%87/"/>
+      <category term="图片" scheme="https://demo.lilidong.cn/tags/%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>让console充满情怀</title>
-    <link href="https://aotu.io/notes/2016/06/22/An-interesting-experience-on-console/"/>
-    <id>https://aotu.io/notes/2016/06/22/An-interesting-experience-on-console/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/06/22/An-interesting-experience-on-console/"/>
+    <id>https://demo.lilidong.cn/notes/2016/06/22/An-interesting-experience-on-console/</id>
     <published>2016-06-22T07:51:18.000Z</published>
     <updated>2016-10-20T07:06:32.426Z</updated>
     
@@ -2997,21 +2997,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="console" scheme="https://aotu.io/tags/console/"/>
+      <category term="console" scheme="https://demo.lilidong.cn/tags/console/"/>
     
-      <category term="占位符" scheme="https://aotu.io/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+      <category term="占位符" scheme="https://demo.lilidong.cn/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
     
-      <category term="字符画" scheme="https://aotu.io/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/"/>
+      <category term="字符画" scheme="https://demo.lilidong.cn/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>假如HTTP/2已经普及</title>
-    <link href="https://aotu.io/notes/2016/06/14/http2/"/>
-    <id>https://aotu.io/notes/2016/06/14/http2/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/06/14/http2/"/>
+    <id>https://demo.lilidong.cn/notes/2016/06/14/http2/</id>
     <published>2016-06-14T09:55:35.000Z</published>
     <updated>2016-10-20T07:06:32.425Z</updated>
     
@@ -3090,19 +3090,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="HTTP2" scheme="https://aotu.io/tags/HTTP2/"/>
+      <category term="HTTP2" scheme="https://demo.lilidong.cn/tags/HTTP2/"/>
     
-      <category term="前端技术" scheme="https://aotu.io/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+      <category term="前端技术" scheme="https://demo.lilidong.cn/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>Adobe Spark试用手记</title>
-    <link href="https://aotu.io/notes/2016/05/27/adobe-spark/"/>
-    <id>https://aotu.io/notes/2016/05/27/adobe-spark/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/05/27/adobe-spark/"/>
+    <id>https://demo.lilidong.cn/notes/2016/05/27/adobe-spark/</id>
     <published>2016-05-27T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.424Z</updated>
     
@@ -3165,19 +3165,19 @@ body {
     
     </summary>
     
-      <category term="体验报告" scheme="https://aotu.io/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+      <category term="体验报告" scheme="https://demo.lilidong.cn/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
     
     
-      <category term="Spark" scheme="https://aotu.io/tags/Spark/"/>
+      <category term="Spark" scheme="https://demo.lilidong.cn/tags/Spark/"/>
     
-      <category term="新品试用" scheme="https://aotu.io/tags/%E6%96%B0%E5%93%81%E8%AF%95%E7%94%A8/"/>
+      <category term="新品试用" scheme="https://demo.lilidong.cn/tags/%E6%96%B0%E5%93%81%E8%AF%95%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>CSS3动画之逐帧动画</title>
-    <link href="https://aotu.io/notes/2016/05/17/css3-animation-frame/"/>
-    <id>https://aotu.io/notes/2016/05/17/css3-animation-frame/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/05/17/css3-animation-frame/"/>
+    <id>https://demo.lilidong.cn/notes/2016/05/17/css3-animation-frame/</id>
     <published>2016-05-17T02:00:00.000Z</published>
     <updated>2016-10-20T07:06:32.424Z</updated>
     
@@ -3275,17 +3275,17 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="动画" scheme="https://aotu.io/tags/%E5%8A%A8%E7%94%BB/"/>
+      <category term="动画" scheme="https://demo.lilidong.cn/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>CSS3动画之补间动画</title>
-    <link href="https://aotu.io/notes/2016/05/06/Guide-To-Tween-Animation/"/>
-    <id>https://aotu.io/notes/2016/05/06/Guide-To-Tween-Animation/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/05/06/Guide-To-Tween-Animation/"/>
+    <id>https://demo.lilidong.cn/notes/2016/05/06/Guide-To-Tween-Animation/</id>
     <published>2016-05-06T03:03:09.000Z</published>
     <updated>2016-10-20T07:06:32.424Z</updated>
     
@@ -3321,7 +3321,7 @@ body {
 <p><img src="//img.aotu.io/Tingglelaoo/20160506/3.png" alt="《动画属性分解表示例》" style="display:block;max-width:640px;margin: 0 auto;"></p>
 <p>又或者是根据沟通分析规划出来的动画时间轴。</p>
 <blockquote>
-<p>动画时间轴，来源于<a href="http://aotu.io/notes/2016/01/04/css3-animation/">《CSS3动画实践》</a></p>
+<p>动画时间轴，来源于<a href="http://aotu.io/notes/2016/01/04/css3-animation/" target="_blank" rel="external">《CSS3动画实践》</a></p>
 </blockquote>
 <p><img src="//img.aotu.io/Tingglelaoo/20160506/4.png" alt="《动画时间轴示例》" style="display:block;margin: 0 auto;"></p>
 <h2 id="动画要自然不生硬，十二法则你值得拥有"><a href="#动画要自然不生硬，十二法则你值得拥有" class="headerlink" title="动画要自然不生硬，十二法则你值得拥有"></a>动画要自然不生硬，十二法则你值得拥有</h2><p>不管是在影视动画界，还是前端动画界里遵循的都是同一套配方，追求同样的味道——「迪士尼九老」总结的<a href="http://markgeyer.com/pres/the-art-of-ui-animations/#/2/5" target="_blank" rel="external">十二黄金动画法则</a>（以下简称“十二法则”），一直沿用至今、备受推崇不是没有道理的。</p>
@@ -3386,21 +3386,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS3" scheme="https://aotu.io/tags/CSS3/"/>
+      <category term="CSS3" scheme="https://demo.lilidong.cn/tags/CSS3/"/>
     
-      <category term="Aniamtion" scheme="https://aotu.io/tags/Aniamtion/"/>
+      <category term="Aniamtion" scheme="https://demo.lilidong.cn/tags/Aniamtion/"/>
     
-      <category term="动画" scheme="https://aotu.io/tags/%E5%8A%A8%E7%94%BB/"/>
+      <category term="动画" scheme="https://demo.lilidong.cn/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>CSS3动画之3D动画</title>
-    <link href="https://aotu.io/notes/2016/05/06/CSS3-3D-Animation/"/>
-    <id>https://aotu.io/notes/2016/05/06/CSS3-3D-Animation/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/05/06/CSS3-3D-Animation/"/>
+    <id>https://demo.lilidong.cn/notes/2016/05/06/CSS3-3D-Animation/</id>
     <published>2016-05-06T02:00:00.000Z</published>
     <updated>2016-10-20T07:06:32.423Z</updated>
     
@@ -3476,25 +3476,25 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS3" scheme="https://aotu.io/tags/CSS3/"/>
+      <category term="CSS3" scheme="https://demo.lilidong.cn/tags/CSS3/"/>
     
-      <category term="动画" scheme="https://aotu.io/tags/%E5%8A%A8%E7%94%BB/"/>
+      <category term="动画" scheme="https://demo.lilidong.cn/tags/%E5%8A%A8%E7%94%BB/"/>
     
-      <category term="H5" scheme="https://aotu.io/tags/H5/"/>
+      <category term="H5" scheme="https://demo.lilidong.cn/tags/H5/"/>
     
-      <category term="触屏页" scheme="https://aotu.io/tags/%E8%A7%A6%E5%B1%8F%E9%A1%B5/"/>
+      <category term="触屏页" scheme="https://demo.lilidong.cn/tags/%E8%A7%A6%E5%B1%8F%E9%A1%B5/"/>
     
-      <category term="3D" scheme="https://aotu.io/tags/3D/"/>
+      <category term="3D" scheme="https://demo.lilidong.cn/tags/3D/"/>
     
   </entry>
   
   <entry>
     <title>Swift Package Manager 快速入门指引</title>
-    <link href="https://aotu.io/notes/2016/04/28/SPM/"/>
-    <id>https://aotu.io/notes/2016/04/28/SPM/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/28/SPM/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/28/SPM/</id>
     <published>2016-04-28T02:53:03.000Z</published>
     <updated>2016-10-20T07:06:32.423Z</updated>
     
@@ -3635,19 +3635,19 @@ body {
     
     </summary>
     
-      <category term="移动开发" scheme="https://aotu.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+      <category term="移动开发" scheme="https://demo.lilidong.cn/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS" scheme="https://aotu.io/tags/iOS/"/>
+      <category term="iOS" scheme="https://demo.lilidong.cn/tags/iOS/"/>
     
-      <category term="Swift" scheme="https://aotu.io/tags/Swift/"/>
+      <category term="Swift" scheme="https://demo.lilidong.cn/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>如何用ArrayBuffer构造一个form请求</title>
-    <link href="https://aotu.io/notes/2016/04/21/form-request/"/>
-    <id>https://aotu.io/notes/2016/04/21/form-request/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/21/form-request/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/21/form-request/</id>
     <published>2016-04-21T02:53:03.000Z</published>
     <updated>2016-10-20T07:06:32.422Z</updated>
     
@@ -3703,23 +3703,23 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="form" scheme="https://aotu.io/tags/form/"/>
+      <category term="form" scheme="https://demo.lilidong.cn/tags/form/"/>
     
-      <category term="xhr2" scheme="https://aotu.io/tags/xhr2/"/>
+      <category term="xhr2" scheme="https://demo.lilidong.cn/tags/xhr2/"/>
     
-      <category term="ArrayBuffer" scheme="https://aotu.io/tags/ArrayBuffer/"/>
+      <category term="ArrayBuffer" scheme="https://demo.lilidong.cn/tags/ArrayBuffer/"/>
     
-      <category term="构造form数据" scheme="https://aotu.io/tags/%E6%9E%84%E9%80%A0form%E6%95%B0%E6%8D%AE/"/>
+      <category term="构造form数据" scheme="https://demo.lilidong.cn/tags/%E6%9E%84%E9%80%A0form%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript中reduce()方法不完全指南</title>
-    <link href="https://aotu.io/notes/2016/04/14/js-reduce/"/>
-    <id>https://aotu.io/notes/2016/04/14/js-reduce/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/14/js-reduce/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/14/js-reduce/</id>
     <published>2016-04-14T08:41:22.000Z</published>
     <updated>2016-10-20T07:06:32.420Z</updated>
     
@@ -3800,19 +3800,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="JavaScript" scheme="https://aotu.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://demo.lilidong.cn/tags/JavaScript/"/>
     
-      <category term="reduce" scheme="https://aotu.io/tags/reduce/"/>
+      <category term="reduce" scheme="https://demo.lilidong.cn/tags/reduce/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript中Math.random的种子设定方法</title>
-    <link href="https://aotu.io/notes/2016/04/14/math-random/"/>
-    <id>https://aotu.io/notes/2016/04/14/math-random/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/14/math-random/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/14/math-random/</id>
     <published>2016-04-14T08:30:45.000Z</published>
     <updated>2016-10-20T07:06:32.421Z</updated>
     
@@ -3868,19 +3868,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="JavaScript" scheme="https://aotu.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://demo.lilidong.cn/tags/JavaScript/"/>
     
-      <category term="Random" scheme="https://aotu.io/tags/Random/"/>
+      <category term="Random" scheme="https://demo.lilidong.cn/tags/Random/"/>
     
   </entry>
   
   <entry>
     <title>Canvas虹膜消除转场</title>
-    <link href="https://aotu.io/notes/2016/04/13/Iris-Wipe/"/>
-    <id>https://aotu.io/notes/2016/04/13/Iris-Wipe/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/13/Iris-Wipe/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/13/Iris-Wipe/</id>
     <published>2016-04-13T02:59:20.000Z</published>
     <updated>2016-10-20T07:06:32.420Z</updated>
     
@@ -4015,25 +4015,25 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Canvas" scheme="https://aotu.io/tags/Canvas/"/>
+      <category term="Canvas" scheme="https://demo.lilidong.cn/tags/Canvas/"/>
     
-      <category term="转场" scheme="https://aotu.io/tags/%E8%BD%AC%E5%9C%BA/"/>
+      <category term="转场" scheme="https://demo.lilidong.cn/tags/%E8%BD%AC%E5%9C%BA/"/>
     
-      <category term="触屏页转场" scheme="https://aotu.io/tags/%E8%A7%A6%E5%B1%8F%E9%A1%B5%E8%BD%AC%E5%9C%BA/"/>
+      <category term="触屏页转场" scheme="https://demo.lilidong.cn/tags/%E8%A7%A6%E5%B1%8F%E9%A1%B5%E8%BD%AC%E5%9C%BA/"/>
     
-      <category term="消除转场" scheme="https://aotu.io/tags/%E6%B6%88%E9%99%A4%E8%BD%AC%E5%9C%BA/"/>
+      <category term="消除转场" scheme="https://demo.lilidong.cn/tags/%E6%B6%88%E9%99%A4%E8%BD%AC%E5%9C%BA/"/>
     
-      <category term="虹膜" scheme="https://aotu.io/tags/%E8%99%B9%E8%86%9C/"/>
+      <category term="虹膜" scheme="https://demo.lilidong.cn/tags/%E8%99%B9%E8%86%9C/"/>
     
   </entry>
   
   <entry>
     <title>前端优化实践总结</title>
-    <link href="https://aotu.io/notes/2016/04/12/jcloud-opt/"/>
-    <id>https://aotu.io/notes/2016/04/12/jcloud-opt/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/12/jcloud-opt/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/12/jcloud-opt/</id>
     <published>2016-04-12T07:50:35.000Z</published>
     <updated>2016-10-20T07:06:32.420Z</updated>
     
@@ -4041,7 +4041,7 @@ body {
 <p>记得前百度工程师张云龙说过，页面前端优化问题绝对不仅仅是为页面提速的问题，更是工程的问题，有兴趣的同学可以阅读《<a href="https://github.com/fouber/blog/issues/3" target="_blank" rel="external">前端工程与性能优化</a>》。里面有提到根据雅虎14条优化原则，《高性能网站建设指南》以及《高性能网站建设进阶指南》中提到的优化点梳理出来的优化方向：</p>
 <p><img src="//img.aotu.io/mihanX/jcloud-opt/img_31.png" alt="img"></p>
 <p>张云龙先生提及到的优化方向从提出到现在虽已相隔两年时间，前端技术也在飞速发展，但其提到的工程化思想仍是前端优化的一个大方向，亦有很大的指导意义。</p>
-<p>当然这是另外更大的话题了，这篇文章并不是将本次的优化点按照萌妹子暖暖写的《<a href="http://aotu.io/notes/2016/03/16/optimization/#comments">前端优化不完全指南</a>》一一列出（当然并没有那么多，前端优化永远写不完，写不完：- O），而是<strong>重点结合项目总结</strong>这一次优化中<strong>如何寻找优化点</strong>以及<strong>收益比较大的常见方法</strong>，希望可以对遇到相似问题的同学有帮助，前端大神可轻轻淡笑而过。</p>
+<p>当然这是另外更大的话题了，这篇文章并不是将本次的优化点按照萌妹子暖暖写的《<a href="http://aotu.io/notes/2016/03/16/optimization/#comments" target="_blank" rel="external">前端优化不完全指南</a>》一一列出（当然并没有那么多，前端优化永远写不完，写不完：- O），而是<strong>重点结合项目总结</strong>这一次优化中<strong>如何寻找优化点</strong>以及<strong>收益比较大的常见方法</strong>，希望可以对遇到相似问题的同学有帮助，前端大神可轻轻淡笑而过。</p>
 <h2 id="高清图适配优化"><a href="#高清图适配优化" class="headerlink" title="高清图适配优化"></a>高清图适配优化</h2><p>我们所说的高清图一般是指至少具有 Retina 屏级别精度的图片，就是平时所说的『2x』图。对于高清图的适配，一般会根据图片特点以及项目实际情况去制定适配方案。</p>
 <h3 id="纯色图"><a href="#纯色图" class="headerlink" title="纯色图"></a>纯色图</h3><p>纯色图一般应用到装饰性的小 icon，如侧导航的标题 icon：</p>
 <p><img src="//img.aotu.io/mihanX/jcloud-opt/img_1.jpg" alt="img"> </p>
@@ -4168,19 +4168,19 @@ body {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="项目总结" scheme="https://aotu.io/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
-      <category term="页面优化" scheme="https://aotu.io/tags/%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96/"/>
+      <category term="页面优化" scheme="https://demo.lilidong.cn/tags/%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Node读写Excel文件探究实践</title>
-    <link href="https://aotu.io/notes/2016/04/07/node-excel/"/>
-    <id>https://aotu.io/notes/2016/04/07/node-excel/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/04/07/node-excel/"/>
+    <id>https://demo.lilidong.cn/notes/2016/04/07/node-excel/</id>
     <published>2016-04-07T10:32:18.000Z</published>
     <updated>2016-10-20T07:06:32.419Z</updated>
     
@@ -4248,29 +4248,29 @@ body {
     
     </summary>
     
-      <category term="NodeJS" scheme="https://aotu.io/cates/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/cates/NodeJS/"/>
     
     
-      <category term="node" scheme="https://aotu.io/tags/node/"/>
+      <category term="node" scheme="https://demo.lilidong.cn/tags/node/"/>
     
-      <category term="excel" scheme="https://aotu.io/tags/excel/"/>
+      <category term="excel" scheme="https://demo.lilidong.cn/tags/excel/"/>
     
-      <category term="JS-XLSX" scheme="https://aotu.io/tags/JS-XLSX/"/>
+      <category term="JS-XLSX" scheme="https://demo.lilidong.cn/tags/JS-XLSX/"/>
     
-      <category term="Node-Excel-Export" scheme="https://aotu.io/tags/Node-Excel-Export/"/>
+      <category term="Node-Excel-Export" scheme="https://demo.lilidong.cn/tags/Node-Excel-Export/"/>
     
   </entry>
   
   <entry>
     <title>提升代码的可读性系列(一)--基础篇</title>
-    <link href="https://aotu.io/notes/2016/03/31/readable/"/>
-    <id>https://aotu.io/notes/2016/03/31/readable/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/31/readable/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/31/readable/</id>
     <published>2016-03-31T05:30:12.000Z</published>
     <updated>2016-10-20T07:06:32.418Z</updated>
     
     <content type="html"><![CDATA[<p>编程是一门艺术活，好的代码应该就像住的房子一样，有整体的框架，有门，有窗户，相互独立又完美组合。你觉得门不够结实，就拆下来换个实心的；你觉得窗户不够明亮就换个全玻璃的，总之对房子的其他部位没有任何影响。所以说每一个程序员都应该有一颗设计师的心。本文主要从<strong>编码</strong>、<strong>变量</strong>、<strong>处理错误</strong>、<strong>对象</strong>等基础方面进行简单的探讨，希望能对大家的工作有所帮助~~</p>
 <a id="more"></a>
-<h2 id="1-编码风格"><a href="#1-编码风格" class="headerlink" title="1 编码风格"></a>1 编码风格</h2><p>老生常谈，我们先从最基础的编码说起吧！好的编码规范不仅仅能够提升代码的可读性与可维护性，提高团队的工作效率，也能够避开一些低级的错误，减少bug的隐患，提升程序员的自我修养。编码虽小，但却是万丈高楼的基础，对于编写清晰连贯的代码来说，每一个字符都是非常重要的。以下部分编码规范参考自<a href="http://aotu.io">凹凸实验室</a>。</p>
+<h2 id="1-编码风格"><a href="#1-编码风格" class="headerlink" title="1 编码风格"></a>1 编码风格</h2><p>老生常谈，我们先从最基础的编码说起吧！好的编码规范不仅仅能够提升代码的可读性与可维护性，提高团队的工作效率，也能够避开一些低级的错误，减少bug的隐患，提升程序员的自我修养。编码虽小，但却是万丈高楼的基础，对于编写清晰连贯的代码来说，每一个字符都是非常重要的。以下部分编码规范参考自<a href="http://aotu.io" target="_blank" rel="external">凹凸实验室</a>。</p>
 <h4 id="1-1-缩进"><a href="#1-1-缩进" class="headerlink" title="1.1 缩进"></a>1.1 缩进</h4><p>通常使用四个空格进行代码缩进，有些也用tab来缩进，这主要根据团队的风格跟个人喜好</p>
 <h4 id="1-2-空格"><a href="#1-2-空格" class="headerlink" title="1.2 空格"></a>1.2 空格</h4><ul>
 <li>左括号与类名之间一个空格</li>
@@ -4371,29 +4371,29 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="编码风格" scheme="https://aotu.io/tags/%E7%BC%96%E7%A0%81%E9%A3%8E%E6%A0%BC/"/>
+      <category term="编码风格" scheme="https://demo.lilidong.cn/tags/%E7%BC%96%E7%A0%81%E9%A3%8E%E6%A0%BC/"/>
     
-      <category term="变量" scheme="https://aotu.io/tags/%E5%8F%98%E9%87%8F/"/>
+      <category term="变量" scheme="https://demo.lilidong.cn/tags/%E5%8F%98%E9%87%8F/"/>
     
-      <category term="UI松耦合" scheme="https://aotu.io/tags/UI%E6%9D%BE%E8%80%A6%E5%90%88/"/>
+      <category term="UI松耦合" scheme="https://demo.lilidong.cn/tags/UI%E6%9D%BE%E8%80%A6%E5%90%88/"/>
     
-      <category term="错误处理" scheme="https://aotu.io/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/"/>
+      <category term="错误处理" scheme="https://demo.lilidong.cn/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/"/>
     
-      <category term="创建对象" scheme="https://aotu.io/tags/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/"/>
+      <category term="创建对象" scheme="https://demo.lilidong.cn/tags/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="可读性" scheme="https://aotu.io/tags/%E5%8F%AF%E8%AF%BB%E6%80%A7/"/>
+      <category term="可读性" scheme="https://demo.lilidong.cn/tags/%E5%8F%AF%E8%AF%BB%E6%80%A7/"/>
     
-      <category term="可维护性" scheme="https://aotu.io/tags/%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7/"/>
+      <category term="可维护性" scheme="https://demo.lilidong.cn/tags/%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>如何优雅地在Storyboard中设置圆角</title>
-    <link href="https://aotu.io/notes/2016/03/30/cornerRadius-in-Storyboard/"/>
-    <id>https://aotu.io/notes/2016/03/30/cornerRadius-in-Storyboard/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/30/cornerRadius-in-Storyboard/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/30/cornerRadius-in-Storyboard/</id>
     <published>2016-03-30T08:56:03.000Z</published>
     <updated>2016-10-20T07:06:32.418Z</updated>
     
@@ -4441,19 +4441,19 @@ body {
     
     </summary>
     
-      <category term="移动开发" scheme="https://aotu.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+      <category term="移动开发" scheme="https://demo.lilidong.cn/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS" scheme="https://aotu.io/tags/iOS/"/>
+      <category term="iOS" scheme="https://demo.lilidong.cn/tags/iOS/"/>
     
-      <category term="Swift" scheme="https://aotu.io/tags/Swift/"/>
+      <category term="Swift" scheme="https://demo.lilidong.cn/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>前端开发与 HTTP/2 的羁绊——安利篇</title>
-    <link href="https://aotu.io/notes/2016/03/17/http2-char/"/>
-    <id>https://aotu.io/notes/2016/03/17/http2-char/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/17/http2-char/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/17/http2-char/</id>
     <published>2016-03-17T08:54:00.000Z</published>
     <updated>2016-10-20T07:06:32.418Z</updated>
     
@@ -4594,17 +4594,17 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="HTTP2" scheme="https://aotu.io/tags/HTTP2/"/>
+      <category term="HTTP2" scheme="https://demo.lilidong.cn/tags/HTTP2/"/>
     
   </entry>
   
   <entry>
     <title>前端优化不完全指南</title>
-    <link href="https://aotu.io/notes/2016/03/16/optimization/"/>
-    <id>https://aotu.io/notes/2016/03/16/optimization/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/16/optimization/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/16/optimization/</id>
     <published>2016-03-16T07:26:12.000Z</published>
     <updated>2016-10-20T07:06:32.417Z</updated>
     
@@ -4634,7 +4634,7 @@ body {
 <h4 id="1-2-2-浏览器开发者工具"><a href="#1-2-2-浏览器开发者工具" class="headerlink" title="1.2.2 浏览器开发者工具"></a>1.2.2 浏览器开发者工具</h4><p>作为前端人员，首选的浏览器当然是chrome。推荐阅读<a href="http://web.jobbole.com/82558/" target="_blank" rel="external">Chrome开发者工具不完全指南</a>一系列文章，它从一些基础的功能开始到它的一些高级性能分析器（Timeline、Profiles），熟悉chrome对我们的开发工作有很大的作用。</p>
 <h4 id="1-2-3-其他常用工具"><a href="#1-2-3-其他常用工具" class="headerlink" title="1.2.3 其他常用工具"></a>1.2.3 其他常用工具</h4><p>切图工具：<a href="http://jingyan.baidu.com/article/e73e26c0c9971524adb6a7a6.html" target="_blank" rel="external">photoshop cc切图之智能切图</a>、 <a href="http://www.cutterman.cn/v2/cutterman" target="_blank" rel="external">cutterman</a><br>量色、测距工具：FastStone Capture、<a href="http://www.getmarkman.com/" target="_blank" rel="external">马克鳗 - 设计稿标注</a><br>图片压缩：<a href="https://tinypng.com/" target="_blank" rel="external">tinypng</a>、<a href="http://zhitu.isux.us/" target="_blank" rel="external">智图</a><br>生成雪碧图：<a href="http://www.spritebox.net/" target="_blank" rel="external">spritebox</a>、<a href="http://www.cn.spritegen.website-performance.org/" target="_blank" rel="external">CSS Sprite Generator</a>、cssgaga<br>调试工具：Fiddler 、weinre 、微信调试工具；</p>
 <h4 id="1-2-4-前端工程化"><a href="#1-2-4-前端工程化" class="headerlink" title="1.2.4 前端工程化"></a>1.2.4 前端工程化</h4><p>凡是重复的，必须使用工具自动完成。<br>工具众多，我们就有一种想法，能不能有一种工具能帮我们自动生成雪碧图、 css压缩、图片压缩等等，然后就出现了前端工程化。前端工程化一般可分为五个步骤：<br>（1） 初始，生成基础目录结构和样式库。<br>（2） 开发，实时预览、预编译。<br>（3） 构建，预编译、合并、压缩。<br>（4） 发布，将构建后静态文件发布上线。<br>（5） 打包，资源路径转换，源码打包 。</p>
-<p>这里推荐一个工具<a href="http://fis.baidu.com/" target="_blank" rel="external">fis</a>，解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题。还有凹凸实验室研发的<a href="http://aotu.io/athena/">athena</a>，O2Team构建项目流程工具，可以生成相应目录和代码，同时对项目进行编译， 一次安装，到处运行。</p>
+<p>这里推荐一个工具<a href="http://fis.baidu.com/" target="_blank" rel="external">fis</a>，解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题。还有凹凸实验室研发的<a href="http://aotu.io/athena/" target="_blank" rel="external">athena</a>，O2Team构建项目流程工具，可以生成相应目录和代码，同时对项目进行编译， 一次安装，到处运行。</p>
 <h3 id="1-3-阅历和经验"><a href="#1-3-阅历和经验" class="headerlink" title="1.3 阅历和经验"></a>1.3 阅历和经验</h3><p>我所理解的程序员兼并聪明以及“懒惰”精神，推崇懒惰式开发，即把问题理解清楚，确保将要写的代码能真正的解决问题，这将会避免之后写出大量无用的代码，正所谓“懒”出效率。<br>我们的阅历和经验可以大大提高开发效率，思考代码的时间增加从而选出最优方案，因此写代码速度更快以及代码长度更短，对问题的透彻理解使调试代码的速度也更快。<br>根据阅历和经验，或借助其他人的，我们进行整理从而形成自己或团队的规范，这可大大提高我们的写码速度。</p>
 <h3 id="1-4-使用新技术"><a href="#1-4-使用新技术" class="headerlink" title="1.4 使用新技术"></a>1.4 使用新技术</h3><p>使用新技术如何提高我们的工作效率。一贯我们都使用我们熟悉的技术去开发一个技术处理方案，毕竟学习新技术的时间成本还是存在的。但是还是不能忽略一些新技术的存在，一般新技术包含了一些很棒的新特性，可以更加方便的实现很多复杂的操作，提高开发人员的效率，比如ES6。<strong>用你的慧眼去积累新技术，会派上用场的</strong>。</p>
 <h2 id="2-速度性能"><a href="#2-速度性能" class="headerlink" title="2 速度性能"></a>2 速度性能</h2><p>为什么需要前端性能优化？性能优化可以从哪几个方面入手？<br>遇到一个页面，5秒还没加载完成，那个菊花转啊转，或者页面完全白屏，那简直把人逼疯了。从用户体验的角度看，前端性能优化是非常有必要的。网页最长加载时间一般不能超过3秒。<br>首先我们需要确定网页的性能指标，可量化的目标以及可持续跟踪的优化数据是性能优化工作得以持续进行的保障，同时也是源动力！比如：</p>
@@ -4809,7 +4809,7 @@ body {
 <li>对低版本浏览器使用JS动态响应。</li>
 <li>一套“自适应”素材兼容各种分辨率，提升页面性能，比如自适应的图片/视频素材。</li>
 </ul>
-<p>比如<a href="http://aotu.io/notes/">凹凸实验室博客</a>页面在PC端、iPad、手机端的排版：<br>PC端：<br><img src="//img.aotu.io/wangcainuan/2016-03-16-optimization/凹凸实验室1.jpg" alt="img"></p>
+<p>比如<a href="http://aotu.io/notes/" target="_blank" rel="external">凹凸实验室博客</a>页面在PC端、iPad、手机端的排版：<br>PC端：<br><img src="//img.aotu.io/wangcainuan/2016-03-16-optimization/凹凸实验室1.jpg" alt="img"></p>
 <p>iPad：<br><img src="//img.aotu.io/wangcainuan/2016-03-16-optimization/凹凸实验室2.jpg" alt="img"></p>
 <p>手机端：<br><img src="//img.aotu.io/wangcainuan/2016-03-16-optimization/凹凸实验室3.jpg" alt="img"></p>
 <h2 id="5-兼容性"><a href="#5-兼容性" class="headerlink" title="5 兼容性"></a>5 兼容性</h2><p>估计很多人对这句话都有体会：IE虐我千百遍，我待IE如初恋。当然，除了 IE 上有兼容性问题，其他浏览器比如 Android 上的低版本浏览器也有较多问题。<br>是否继续保持对低端浏览器的兼容性，我们可以用数据跟产品经理或者老板说话，减少我们的工作量，最好在项目之前就定下来支持最低支持的版本是什么，然后设计一个对应兼容方案。以下是百度统计的2015年的浏览器市场份额数据：</p>
@@ -4896,37 +4896,37 @@ body {
     
     </summary>
     
-      <category term="资源合集" scheme="https://aotu.io/cates/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/"/>
+      <category term="资源合集" scheme="https://demo.lilidong.cn/cates/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/"/>
     
     
-      <category term="工作效率" scheme="https://aotu.io/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/"/>
+      <category term="工作效率" scheme="https://demo.lilidong.cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/"/>
     
-      <category term="速度性能" scheme="https://aotu.io/tags/%E9%80%9F%E5%BA%A6%E6%80%A7%E8%83%BD/"/>
+      <category term="速度性能" scheme="https://demo.lilidong.cn/tags/%E9%80%9F%E5%BA%A6%E6%80%A7%E8%83%BD/"/>
     
-      <category term="安全性" scheme="https://aotu.io/tags/%E5%AE%89%E5%85%A8%E6%80%A7/"/>
+      <category term="安全性" scheme="https://demo.lilidong.cn/tags/%E5%AE%89%E5%85%A8%E6%80%A7/"/>
     
-      <category term="响应式" scheme="https://aotu.io/tags/%E5%93%8D%E5%BA%94%E5%BC%8F/"/>
+      <category term="响应式" scheme="https://demo.lilidong.cn/tags/%E5%93%8D%E5%BA%94%E5%BC%8F/"/>
     
-      <category term="兼容性" scheme="https://aotu.io/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+      <category term="兼容性" scheme="https://demo.lilidong.cn/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
     
-      <category term="搜索SEO" scheme="https://aotu.io/tags/%E6%90%9C%E7%B4%A2SEO/"/>
+      <category term="搜索SEO" scheme="https://demo.lilidong.cn/tags/%E6%90%9C%E7%B4%A2SEO/"/>
     
-      <category term="信息无障碍" scheme="https://aotu.io/tags/%E4%BF%A1%E6%81%AF%E6%97%A0%E9%9A%9C%E7%A2%8D/"/>
+      <category term="信息无障碍" scheme="https://demo.lilidong.cn/tags/%E4%BF%A1%E6%81%AF%E6%97%A0%E9%9A%9C%E7%A2%8D/"/>
     
-      <category term="前端优化" scheme="https://aotu.io/tags/%E5%89%8D%E7%AB%AF%E4%BC%98%E5%8C%96/"/>
+      <category term="前端优化" scheme="https://demo.lilidong.cn/tags/%E5%89%8D%E7%AB%AF%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>某超长文档的探索之路</title>
-    <link href="https://aotu.io/notes/2016/03/15/jcloud-sum/"/>
-    <id>https://aotu.io/notes/2016/03/15/jcloud-sum/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/15/jcloud-sum/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/15/jcloud-sum/</id>
     <published>2016-03-15T08:18:00.000Z</published>
     <updated>2016-10-20T07:06:32.417Z</updated>
     
     <content type="html"><![CDATA[<p>所谓的文档, 大概就是指那种洋洋洒洒写了不下几万字, 最后没有多少人会看完的东西. 对, 比技术不一定, 但比字数谁都赢不了我! </p>
 <a id="more"></a>
-<p>这次京东云改版的项目, 除了需要搭建一个放置京东云文档的平台, 还包括了文档录入的工作. 之前使用<a href="http://hexo.io" target="_blank" rel="external"><strong>Hexo</strong></a>做过<a href="http://aotu.io/halojs/"><strong>HaloJS</strong></a>的文档平台, 在文档录入的时候并没有碰到太多问题. 本以为搭建文档页面也就仅此而已, 直到碰到了长达104页的doc文档…</p>
+<p>这次京东云改版的项目, 除了需要搭建一个放置京东云文档的平台, 还包括了文档录入的工作. 之前使用<a href="http://hexo.io" target="_blank" rel="external"><strong>Hexo</strong></a>做过<a href="http://aotu.io/halojs/" target="_blank" rel="external"><strong>HaloJS</strong></a>的文档平台, 在文档录入的时候并没有碰到太多问题. 本以为搭建文档页面也就仅此而已, 直到碰到了长达104页的doc文档…</p>
 <h3 id="搭建框架"><a href="#搭建框架" class="headerlink" title="搭建框架"></a>搭建框架</h3><p>不同于其他零散的页面, 文档页面是一整个系列的, 具有相同的页面结构. 页面头部, 底部, 导航等组件. 如果像平时制作静态页面那样每个页面都从一个空白的模板html文件开始下手, 在开发量达到一定程度的时候, 页面整体的维护就会非常困难. 首先是无法很痛快地进行某些公共模块的修改: 就算只是在底部加多一个链接, 或者在导航中删除一个条目, 我们都需要对每个页面都进行手动修改. 另外, 页面的资源管理会越来越难. 每个页面都需要引用整体页面的样式文件与脚本文件, 还都有页面私有的样式文件, 脚本文件, 还有图片文件等. 如果这些资源共用一个文件夹, 有时候就会面临文件命名的难题. </p>
 <p>如上面说, 文档页面可谓是重复工作最严重的一种页面. 好在搭建框架的小伙伴非常给力, 使用了同样很给力的开源的前端工程化开发工具<a href="https://github.com/o2team/athena" target="_blank" rel="external">Athena</a>,自带支持代码热更新的预览服务, 自带压缩代码, 编译sass/less的工具, 自带上传sftp的工具等等. 而对于这个需求来说, 最好用的莫过于ejs模板语法的支持了. 有了模板, 公共的组件在不同页面都可以随意引用, 工作量减少了非常多. </p>
 <p>每个页面都由组件组成, 平时写页面的时候只需要点名引用需要的组件. 搭建完成后, 使用Athena工具的build命令, 就可以将页面的静态文件输出. 对于这批文档的页面, 每个页面会被拆分为头部组件, 底部组件, 导航组件. 如果开发过程中某个组件产生变化, 只需要直接修改组件, 再重新运行build命令, 就可以使每个引用了这个组件的页面都一起变过来, 可谓十分方便.</p>
@@ -4972,19 +4972,19 @@ body {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="jcloud" scheme="https://aotu.io/tags/jcloud/"/>
+      <category term="jcloud" scheme="https://demo.lilidong.cn/tags/jcloud/"/>
     
-      <category term="sum" scheme="https://aotu.io/tags/sum/"/>
+      <category term="sum" scheme="https://demo.lilidong.cn/tags/sum/"/>
     
   </entry>
   
   <entry>
     <title>让图片加载这件事儿变得更美好</title>
-    <link href="https://aotu.io/notes/2016/03/09/img-loading-optimization-in-mobile/"/>
-    <id>https://aotu.io/notes/2016/03/09/img-loading-optimization-in-mobile/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/09/img-loading-optimization-in-mobile/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/09/img-loading-optimization-in-mobile/</id>
     <published>2016-03-09T09:38:02.000Z</published>
     <updated>2016-10-20T07:06:32.416Z</updated>
     
@@ -5030,7 +5030,7 @@ body {
 <p>以下为Chrome Dev Tool 对案例资源查看的界面截图</p>
 </blockquote>
 <p><img src="//img.aotu.io/Tingglelaoo/20160302/drose6-code.png" alt="img" style="display:block;width:100%;"></p>
-<p>虽然，业界有一种说法是不建议在移动端开发中使用DataURL转换图片为base64编码的做法，因为对大量的base64图片解码比较损耗内存和性能，但是使用base64在一定条件下是有助于页面加载速度提升，具体的原由可以前往<a href="http://aotu.io/notes/2016/03/04/can-we-use-base64-in-h5-webapps/">《图片资源Base64化在H5页面里有用武之地吗？》</a>阅读。</p>
+<p>虽然，业界有一种说法是不建议在移动端开发中使用DataURL转换图片为base64编码的做法，因为对大量的base64图片解码比较损耗内存和性能，但是使用base64在一定条件下是有助于页面加载速度提升，具体的原由可以前往<a href="http://aotu.io/notes/2016/03/04/can-we-use-base64-in-h5-webapps/" target="_blank" rel="external">《图片资源Base64化在H5页面里有用武之地吗？》</a>阅读。</p>
 <h3 id="隐性预加载"><a href="#隐性预加载" class="headerlink" title="隐性预加载"></a>隐性预加载</h3><p>除了明确的预加载提示，还有一种是通过推进触屏页面进度的趣味互动的方式，笔者称之此种类似的情况为隐性预加载。</p>
 <blockquote>
 <p>截图来自案例<a href="http://evt.dianping.com/market/20151207/" target="_blank" rel="external">《大众点评：阿惠故事1 - 吃饭别带姥爷》</a>![img](//img.aotu.io/Tingglelaoo/20160302/ahui.png ‘示例图片’ ‘{“style”:”display:inline-block;max-width:200px;max-height:200px;width:100%;”}’ %}</p>
@@ -5062,23 +5062,23 @@ body {
     
     </summary>
     
-      <category term="性能优化" scheme="https://aotu.io/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://demo.lilidong.cn/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="Images" scheme="https://aotu.io/tags/Images/"/>
+      <category term="Images" scheme="https://demo.lilidong.cn/tags/Images/"/>
     
-      <category term="Load" scheme="https://aotu.io/tags/Load/"/>
+      <category term="Load" scheme="https://demo.lilidong.cn/tags/Load/"/>
     
-      <category term="optimize" scheme="https://aotu.io/tags/optimize/"/>
+      <category term="optimize" scheme="https://demo.lilidong.cn/tags/optimize/"/>
     
-      <category term="Mobile" scheme="https://aotu.io/tags/Mobile/"/>
+      <category term="Mobile" scheme="https://demo.lilidong.cn/tags/Mobile/"/>
     
   </entry>
   
   <entry>
     <title>图片资源Base64化在H5页面里有用武之地吗？</title>
-    <link href="https://aotu.io/notes/2016/03/04/can-we-use-base64-in-h5-webapps/"/>
-    <id>https://aotu.io/notes/2016/03/04/can-we-use-base64-in-h5-webapps/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/04/can-we-use-base64-in-h5-webapps/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/04/can-we-use-base64-in-h5-webapps/</id>
     <published>2016-03-04T09:45:03.000Z</published>
     <updated>2016-10-20T07:06:32.416Z</updated>
     
@@ -5352,19 +5352,19 @@ body {
     
     </summary>
     
-      <category term="性能优化" scheme="https://aotu.io/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://demo.lilidong.cn/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="base64" scheme="https://aotu.io/tags/base64/"/>
+      <category term="base64" scheme="https://demo.lilidong.cn/tags/base64/"/>
     
-      <category term="h5" scheme="https://aotu.io/tags/h5/"/>
+      <category term="h5" scheme="https://demo.lilidong.cn/tags/h5/"/>
     
   </entry>
   
   <entry>
     <title>createjs开发入门</title>
-    <link href="https://aotu.io/notes/2016/03/01/createjs-get-started/"/>
-    <id>https://aotu.io/notes/2016/03/01/createjs-get-started/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/03/01/createjs-get-started/"/>
+    <id>https://demo.lilidong.cn/notes/2016/03/01/createjs-get-started/</id>
     <published>2016-03-01T02:10:15.000Z</published>
     <updated>2016-10-20T07:06:32.415Z</updated>
     
@@ -5516,27 +5516,27 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="createjs" scheme="https://aotu.io/tags/createjs/"/>
+      <category term="createjs" scheme="https://demo.lilidong.cn/tags/createjs/"/>
     
-      <category term="tweenjs" scheme="https://aotu.io/tags/tweenjs/"/>
+      <category term="tweenjs" scheme="https://demo.lilidong.cn/tags/tweenjs/"/>
     
-      <category term="zoe" scheme="https://aotu.io/tags/zoe/"/>
+      <category term="zoe" scheme="https://demo.lilidong.cn/tags/zoe/"/>
     
-      <category term="preloadjs" scheme="https://aotu.io/tags/preloadjs/"/>
+      <category term="preloadjs" scheme="https://demo.lilidong.cn/tags/preloadjs/"/>
     
-      <category term="soundjs" scheme="https://aotu.io/tags/soundjs/"/>
+      <category term="soundjs" scheme="https://demo.lilidong.cn/tags/soundjs/"/>
     
-      <category term="easeljs" scheme="https://aotu.io/tags/easeljs/"/>
+      <category term="easeljs" scheme="https://demo.lilidong.cn/tags/easeljs/"/>
     
   </entry>
   
   <entry>
     <title>初探Docker</title>
-    <link href="https://aotu.io/notes/2016/02/27/docker/"/>
-    <id>https://aotu.io/notes/2016/02/27/docker/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/02/27/docker/"/>
+    <id>https://demo.lilidong.cn/notes/2016/02/27/docker/</id>
     <published>2016-02-27T09:55:35.000Z</published>
     <updated>2016-10-20T07:06:32.415Z</updated>
     
@@ -5612,23 +5612,23 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="docker" scheme="https://aotu.io/tags/docker/"/>
+      <category term="docker" scheme="https://demo.lilidong.cn/tags/docker/"/>
     
-      <category term="环境" scheme="https://aotu.io/tags/%E7%8E%AF%E5%A2%83/"/>
+      <category term="环境" scheme="https://demo.lilidong.cn/tags/%E7%8E%AF%E5%A2%83/"/>
     
-      <category term="部署" scheme="https://aotu.io/tags/%E9%83%A8%E7%BD%B2/"/>
+      <category term="部署" scheme="https://demo.lilidong.cn/tags/%E9%83%A8%E7%BD%B2/"/>
     
-      <category term="docker hub" scheme="https://aotu.io/tags/docker-hub/"/>
+      <category term="docker hub" scheme="https://demo.lilidong.cn/tags/docker-hub/"/>
     
   </entry>
   
   <entry>
     <title>使用npm scripts替代gulp</title>
-    <link href="https://aotu.io/notes/2016/02/26/use-npm-script-instead-of-gulp/"/>
-    <id>https://aotu.io/notes/2016/02/26/use-npm-script-instead-of-gulp/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/02/26/use-npm-script-instead-of-gulp/"/>
+    <id>https://demo.lilidong.cn/notes/2016/02/26/use-npm-script-instead-of-gulp/</id>
     <published>2016-02-26T08:06:24.000Z</published>
     <updated>2016-10-20T07:06:32.415Z</updated>
     
@@ -5693,19 +5693,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="npm" scheme="https://aotu.io/tags/npm/"/>
+      <category term="npm" scheme="https://demo.lilidong.cn/tags/npm/"/>
     
-      <category term="gulp" scheme="https://aotu.io/tags/gulp/"/>
+      <category term="gulp" scheme="https://demo.lilidong.cn/tags/gulp/"/>
     
   </entry>
   
   <entry>
     <title>Node 生产环境调试</title>
-    <link href="https://aotu.io/notes/2016/02/24/node-debug-in-production/"/>
-    <id>https://aotu.io/notes/2016/02/24/node-debug-in-production/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/02/24/node-debug-in-production/"/>
+    <id>https://demo.lilidong.cn/notes/2016/02/24/node-debug-in-production/</id>
     <published>2016-02-24T04:25:35.000Z</published>
     <updated>2016-10-20T07:06:32.414Z</updated>
     
@@ -5819,19 +5819,19 @@ body {
     
     </summary>
     
-      <category term="NodeJS" scheme="https://aotu.io/cates/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/cates/NodeJS/"/>
     
     
-      <category term="node" scheme="https://aotu.io/tags/node/"/>
+      <category term="调试" scheme="https://demo.lilidong.cn/tags/%E8%B0%83%E8%AF%95/"/>
     
-      <category term="调试" scheme="https://aotu.io/tags/%E8%B0%83%E8%AF%95/"/>
+      <category term="node" scheme="https://demo.lilidong.cn/tags/node/"/>
     
   </entry>
   
   <entry>
     <title>手把手教你搭建ngrok服务－轻松外网调试本机站点</title>
-    <link href="https://aotu.io/notes/2016/02/19/ngrok/"/>
-    <id>https://aotu.io/notes/2016/02/19/ngrok/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/02/19/ngrok/"/>
+    <id>https://demo.lilidong.cn/notes/2016/02/19/ngrok/</id>
     <published>2016-02-19T09:55:35.000Z</published>
     <updated>2016-10-20T07:06:32.414Z</updated>
     
@@ -5932,21 +5932,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="调试" scheme="https://aotu.io/tags/%E8%B0%83%E8%AF%95/"/>
+      <category term="ngrok" scheme="https://demo.lilidong.cn/tags/ngrok/"/>
     
-      <category term="ngrok" scheme="https://aotu.io/tags/ngrok/"/>
+      <category term="反向代理" scheme="https://demo.lilidong.cn/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     
-      <category term="反向代理" scheme="https://aotu.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+      <category term="调试" scheme="https://demo.lilidong.cn/tags/%E8%B0%83%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>你所知道的3xx状态码</title>
-    <link href="https://aotu.io/notes/2016/01/28/3xx-of-http-status/"/>
-    <id>https://aotu.io/notes/2016/01/28/3xx-of-http-status/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/28/3xx-of-http-status/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/28/3xx-of-http-status/</id>
     <published>2016-01-28T12:20:00.000Z</published>
     <updated>2016-10-20T07:06:32.414Z</updated>
     
@@ -5993,21 +5993,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="http" scheme="https://aotu.io/tags/http/"/>
+      <category term="http" scheme="https://demo.lilidong.cn/tags/http/"/>
     
-      <category term="重定向" scheme="https://aotu.io/tags/%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+      <category term="重定向" scheme="https://demo.lilidong.cn/tags/%E9%87%8D%E5%AE%9A%E5%90%91/"/>
     
-      <category term="缓存" scheme="https://aotu.io/tags/%E7%BC%93%E5%AD%98/"/>
+      <category term="缓存" scheme="https://demo.lilidong.cn/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
   <entry>
     <title>如何制作cocoaPods依赖库</title>
-    <link href="https://aotu.io/notes/2016/01/27/how-to-make-cocoapods/"/>
-    <id>https://aotu.io/notes/2016/01/27/how-to-make-cocoapods/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/27/how-to-make-cocoapods/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/27/how-to-make-cocoapods/</id>
     <published>2016-01-27T11:40:49.000Z</published>
     <updated>2016-10-20T07:06:32.413Z</updated>
     
@@ -6079,19 +6079,19 @@ body {
     
     </summary>
     
-      <category term="移动开发" scheme="https://aotu.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+      <category term="移动开发" scheme="https://demo.lilidong.cn/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS" scheme="https://aotu.io/tags/iOS/"/>
+      <category term="iOS" scheme="https://demo.lilidong.cn/tags/iOS/"/>
     
-      <category term="CocoaPods" scheme="https://aotu.io/tags/CocoaPods/"/>
+      <category term="CocoaPods" scheme="https://demo.lilidong.cn/tags/CocoaPods/"/>
     
   </entry>
   
   <entry>
     <title>如何创建私有 CocoaPods 仓库</title>
-    <link href="https://aotu.io/notes/2016/01/26/Private-CocoaPods-Specs-Repo/"/>
-    <id>https://aotu.io/notes/2016/01/26/Private-CocoaPods-Specs-Repo/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/26/Private-CocoaPods-Specs-Repo/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/26/Private-CocoaPods-Specs-Repo/</id>
     <published>2016-01-26T03:35:15.000Z</published>
     <updated>2016-10-20T07:06:32.413Z</updated>
     
@@ -6184,21 +6184,21 @@ body {
     
     </summary>
     
-      <category term="移动开发" scheme="https://aotu.io/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+      <category term="移动开发" scheme="https://demo.lilidong.cn/cates/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS" scheme="https://aotu.io/tags/iOS/"/>
+      <category term="iOS" scheme="https://demo.lilidong.cn/tags/iOS/"/>
     
-      <category term="CocoaPods" scheme="https://aotu.io/tags/CocoaPods/"/>
+      <category term="CocoaPods" scheme="https://demo.lilidong.cn/tags/CocoaPods/"/>
     
-      <category term="Swift" scheme="https://aotu.io/tags/Swift/"/>
+      <category term="Swift" scheme="https://demo.lilidong.cn/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>UFT 需求提报平台回顾</title>
-    <link href="https://aotu.io/notes/2016/01/16/UFT/"/>
-    <id>https://aotu.io/notes/2016/01/16/UFT/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/16/UFT/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/16/UFT/</id>
     <published>2016-01-16T08:44:00.000Z</published>
     <updated>2016-10-20T07:06:32.412Z</updated>
     
@@ -6296,25 +6296,25 @@ body {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="uft" scheme="https://aotu.io/tags/uft/"/>
+      <category term="uft" scheme="https://demo.lilidong.cn/tags/uft/"/>
     
-      <category term="angular" scheme="https://aotu.io/tags/angular/"/>
+      <category term="angular" scheme="https://demo.lilidong.cn/tags/angular/"/>
     
-      <category term="kendo" scheme="https://aotu.io/tags/kendo/"/>
+      <category term="kendo" scheme="https://demo.lilidong.cn/tags/kendo/"/>
     
-      <category term="node-mysql" scheme="https://aotu.io/tags/node-mysql/"/>
+      <category term="node-mysql" scheme="https://demo.lilidong.cn/tags/node-mysql/"/>
     
-      <category term="express" scheme="https://aotu.io/tags/express/"/>
+      <category term="express" scheme="https://demo.lilidong.cn/tags/express/"/>
     
   </entry>
   
   <entry>
     <title>js游戏开发初级入门</title>
-    <link href="https://aotu.io/notes/2016/01/14/introduction-to-JS-game-development/"/>
-    <id>https://aotu.io/notes/2016/01/14/introduction-to-JS-game-development/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/14/introduction-to-JS-game-development/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/14/introduction-to-JS-game-development/</id>
     <published>2016-01-14T01:20:39.000Z</published>
     <updated>2016-10-20T07:06:32.412Z</updated>
     
@@ -6391,21 +6391,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="js" scheme="https://aotu.io/tags/js/"/>
+      <category term="js" scheme="https://demo.lilidong.cn/tags/js/"/>
     
-      <category term="游戏" scheme="https://aotu.io/tags/%E6%B8%B8%E6%88%8F/"/>
+      <category term="游戏" scheme="https://demo.lilidong.cn/tags/%E6%B8%B8%E6%88%8F/"/>
     
-      <category term="五子棋" scheme="https://aotu.io/tags/%E4%BA%94%E5%AD%90%E6%A3%8B/"/>
+      <category term="五子棋" scheme="https://demo.lilidong.cn/tags/%E4%BA%94%E5%AD%90%E6%A3%8B/"/>
     
   </entry>
   
   <entry>
     <title>Promise 实战</title>
-    <link href="https://aotu.io/notes/2016/01/08/promise/"/>
-    <id>https://aotu.io/notes/2016/01/08/promise/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/08/promise/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/08/promise/</id>
     <published>2016-01-08T09:05:05.000Z</published>
     <updated>2016-10-20T07:06:32.412Z</updated>
     
@@ -6451,19 +6451,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="ES6" scheme="https://aotu.io/tags/ES6/"/>
+      <category term="ES6" scheme="https://demo.lilidong.cn/tags/ES6/"/>
     
-      <category term="Promise" scheme="https://aotu.io/tags/Promise/"/>
+      <category term="Promise" scheme="https://demo.lilidong.cn/tags/Promise/"/>
     
   </entry>
   
   <entry>
     <title>使用Chrome开发工具优化Web应用</title>
-    <link href="https://aotu.io/notes/2016/01/07/debug-webapp-with-chrome-devtools/"/>
-    <id>https://aotu.io/notes/2016/01/07/debug-webapp-with-chrome-devtools/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/07/debug-webapp-with-chrome-devtools/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/07/debug-webapp-with-chrome-devtools/</id>
     <published>2016-01-07T09:05:05.000Z</published>
     <updated>2016-10-20T07:06:32.411Z</updated>
     
@@ -6539,23 +6539,23 @@ body {
     
     </summary>
     
-      <category term="性能优化" scheme="https://aotu.io/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://demo.lilidong.cn/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="chrome" scheme="https://aotu.io/tags/chrome/"/>
+      <category term="chrome" scheme="https://demo.lilidong.cn/tags/chrome/"/>
     
-      <category term="DevTool" scheme="https://aotu.io/tags/DevTool/"/>
+      <category term="DevTool" scheme="https://demo.lilidong.cn/tags/DevTool/"/>
     
   </entry>
   
   <entry>
     <title>使用Github的webhooks进行网站自动化部署</title>
-    <link href="https://aotu.io/notes/2016/01/07/auto-deploy-website-by-webhooks-of-github/"/>
-    <id>https://aotu.io/notes/2016/01/07/auto-deploy-website-by-webhooks-of-github/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/07/auto-deploy-website-by-webhooks-of-github/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/07/auto-deploy-website-by-webhooks-of-github/</id>
     <published>2016-01-07T09:05:05.000Z</published>
     <updated>2016-10-20T07:06:32.411Z</updated>
     
-    <content type="html"><![CDATA[<p>相信很多码农都玩过了<code>Git</code>，如果对<code>Git</code>只是一知半解，可以移步<code>LV</code>写的 <a href="http://aotu.io/notes/2015/11/17/Git-Commands/">GIT常用操作总结</a>，下面介绍到的一些关于 <code>Git</code> 的概念就不再赘述。</p>
+    <content type="html"><![CDATA[<p>相信很多码农都玩过了<code>Git</code>，如果对<code>Git</code>只是一知半解，可以移步<code>LV</code>写的 <a href="http://aotu.io/notes/2015/11/17/Git-Commands/" target="_blank" rel="external">GIT常用操作总结</a>，下面介绍到的一些关于 <code>Git</code> 的概念就不再赘述。</p>
 <p>为啥想写这篇文章？主要是因为部门服务器因为安全性原因不允许<code>SCP</code>上传文件进行应用部署，然后有一些应用是放在Github上的，然后部署应用的步骤就变成：</p>
 <p>1.git clone github项目 本地目录<br>2.配置一下应用的pm2.json并reload<br>3.Nginx配置一下反向代理并restart</p>
 <p>当然如果只是一次性部署上去就不再修改的话并没啥问题，但是要是项目持续性修改迭代的话，就比较麻烦了，我们就在不断的重复着上面的步骤。作为一个码农，怎么允许不断的重复同样的工作，于是<code>Github webhooks</code>闪亮登场。</p>
@@ -6572,7 +6572,7 @@ body {
 </ul>
 <p>刚好符合了这几个条件，那接下来就看看如何进行<code>网站自动化部署</code>，主要会从下面几点来讲解：</p>
 <p>1.自动化<code>shell</code>脚本<br>2.服务端实现<br>3.配置<code>github webhooks</code></p>
-<h2 id="自动化脚本"><a href="#自动化脚本" class="headerlink" title="自动化脚本"></a>自动化脚本</h2><p>我之前翻译过一篇文章 <a href="http://aotu.io/notes/2015/12/23/building-command-line-tools-with-node-js/">使用Node.JS创建命令行脚本工具</a>，但是我们现在的自动化脚本直接用 <code>shell</code> 来实现，假设名称为<code>auto_build.sh</code>：</p>
+<h2 id="自动化脚本"><a href="#自动化脚本" class="headerlink" title="自动化脚本"></a>自动化脚本</h2><p>我之前翻译过一篇文章 <a href="http://aotu.io/notes/2015/12/23/building-command-line-tools-with-node-js/" target="_blank" rel="external">使用Node.JS创建命令行脚本工具</a>，但是我们现在的自动化脚本直接用 <code>shell</code> 来实现，假设名称为<code>auto_build.sh</code>：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#! /bin/bash</span></div><div class="line"></div><div class="line">SITE_PATH=<span class="string">'/export/Data/aotu.jd.com/index/cnt1992.github.io'</span></div><div class="line">USER=<span class="string">'admin'</span></div><div class="line">USERGROUP=<span class="string">'admin'</span></div><div class="line"></div><div class="line"><span class="built_in">cd</span> <span class="variable">$SITE_PATH</span></div><div class="line">git reset --hard origin/master</div><div class="line">git clean <span class="_">-f</span></div><div class="line">git pull</div><div class="line">git checkout master</div><div class="line">chown -R <span class="variable">$USER</span>:<span class="variable">$USERGROUP</span> <span class="variable">$SITE_PATH</span></div></pre></td></tr></table></figure>
 <p><strong>Note:</strong> 在执行上面<code>shell</code>脚本之前我们必须第一次手动<code>git clone</code>项目进去，例如：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone github远程项目 /export/Data/aotu<span class="selector-class">.jd</span><span class="selector-class">.com</span>/index/cnt1992<span class="selector-class">.github</span><span class="selector-class">.io</span></div></pre></td></tr></table></figure>
@@ -6613,19 +6613,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Github" scheme="https://aotu.io/tags/Github/"/>
+      <category term="Github" scheme="https://demo.lilidong.cn/tags/Github/"/>
     
-      <category term="webhooks" scheme="https://aotu.io/tags/webhooks/"/>
+      <category term="webhooks" scheme="https://demo.lilidong.cn/tags/webhooks/"/>
     
   </entry>
   
   <entry>
     <title>CSS3动画实践</title>
-    <link href="https://aotu.io/notes/2016/01/04/css3-animation/"/>
-    <id>https://aotu.io/notes/2016/01/04/css3-animation/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/04/css3-animation/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/04/css3-animation/</id>
     <published>2016-01-04T07:58:00.000Z</published>
     <updated>2016-10-20T07:06:32.410Z</updated>
     
@@ -6761,19 +6761,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS3" scheme="https://aotu.io/tags/CSS3/"/>
+      <category term="CSS3" scheme="https://demo.lilidong.cn/tags/CSS3/"/>
     
-      <category term="animation" scheme="https://aotu.io/tags/animation/"/>
+      <category term="animation" scheme="https://demo.lilidong.cn/tags/animation/"/>
     
   </entry>
   
   <entry>
     <title>使用ThreeJS在浏览器中展示全景图</title>
-    <link href="https://aotu.io/notes/2016/01/02/3D-panorama/"/>
-    <id>https://aotu.io/notes/2016/01/02/3D-panorama/</id>
+    <link href="https://demo.lilidong.cn/notes/2016/01/02/3D-panorama/"/>
+    <id>https://demo.lilidong.cn/notes/2016/01/02/3D-panorama/</id>
     <published>2016-01-02T12:06:45.000Z</published>
     <updated>2016-10-20T07:06:32.409Z</updated>
     
@@ -6814,19 +6814,19 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="three.js" scheme="https://aotu.io/tags/three-js/"/>
+      <category term="three.js" scheme="https://demo.lilidong.cn/tags/three-js/"/>
     
-      <category term="panorama" scheme="https://aotu.io/tags/panorama/"/>
+      <category term="panorama" scheme="https://demo.lilidong.cn/tags/panorama/"/>
     
   </entry>
   
   <entry>
     <title>初识Adobe After Effects效果制作</title>
-    <link href="https://aotu.io/notes/2015/12/29/ae/"/>
-    <id>https://aotu.io/notes/2015/12/29/ae/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/29/ae/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/29/ae/</id>
     <published>2015-12-29T14:05:18.000Z</published>
     <updated>2016-10-20T07:06:32.409Z</updated>
     
@@ -6886,21 +6886,21 @@ body {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Adobe After Effects" scheme="https://aotu.io/tags/Adobe-After-Effects/"/>
+      <category term="Adobe After Effects" scheme="https://demo.lilidong.cn/tags/Adobe-After-Effects/"/>
     
-      <category term="AE" scheme="https://aotu.io/tags/AE/"/>
+      <category term="AE" scheme="https://demo.lilidong.cn/tags/AE/"/>
     
-      <category term="AE movie" scheme="https://aotu.io/tags/AE-movie/"/>
+      <category term="AE movie" scheme="https://demo.lilidong.cn/tags/AE-movie/"/>
     
   </entry>
   
   <entry>
     <title>Safari 9.0的新特性</title>
-    <link href="https://aotu.io/notes/2015/12/23/new-safari-9/"/>
-    <id>https://aotu.io/notes/2015/12/23/new-safari-9/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/23/new-safari-9/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/23/new-safari-9/</id>
     <published>2015-12-23T13:42:19.000Z</published>
     <updated>2016-10-20T07:06:32.409Z</updated>
     
@@ -7304,21 +7304,21 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="体验报告" scheme="https://aotu.io/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+      <category term="体验报告" scheme="https://demo.lilidong.cn/cates/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
     
     
-      <category term="Safari 9.0" scheme="https://aotu.io/tags/Safari-9-0/"/>
+      <category term="Safari 9.0" scheme="https://demo.lilidong.cn/tags/Safari-9-0/"/>
     
-      <category term="iOS" scheme="https://aotu.io/tags/iOS/"/>
+      <category term="iOS" scheme="https://demo.lilidong.cn/tags/iOS/"/>
     
-      <category term="OS X" scheme="https://aotu.io/tags/OS-X/"/>
+      <category term="OS X" scheme="https://demo.lilidong.cn/tags/OS-X/"/>
     
   </entry>
   
   <entry>
     <title>【译】使用Node.js创建命令行脚本工具</title>
-    <link href="https://aotu.io/notes/2015/12/23/building-command-line-tools-with-node-js/"/>
-    <id>https://aotu.io/notes/2015/12/23/building-command-line-tools-with-node-js/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/23/building-command-line-tools-with-node-js/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/23/building-command-line-tools-with-node-js/</id>
     <published>2015-12-23T05:19:07.000Z</published>
     <updated>2016-10-20T07:06:32.408Z</updated>
     
@@ -7417,19 +7417,19 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="NodeJS" scheme="https://aotu.io/cates/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/cates/NodeJS/"/>
     
     
-      <category term="NodeJS" scheme="https://aotu.io/tags/NodeJS/"/>
+      <category term="NodeJS" scheme="https://demo.lilidong.cn/tags/NodeJS/"/>
     
-      <category term="CMD" scheme="https://aotu.io/tags/CMD/"/>
+      <category term="CMD" scheme="https://demo.lilidong.cn/tags/CMD/"/>
     
   </entry>
   
   <entry>
     <title>What Does the Foo Mean</title>
-    <link href="https://aotu.io/notes/2015/12/18/etymology-of-foobar/"/>
-    <id>https://aotu.io/notes/2015/12/18/etymology-of-foobar/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/18/etymology-of-foobar/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/18/etymology-of-foobar/</id>
     <published>2015-12-18T13:22:23.000Z</published>
     <updated>2016-10-20T07:06:32.407Z</updated>
     
@@ -7502,17 +7502,17 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="生活玩乐" scheme="https://aotu.io/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
+      <category term="生活玩乐" scheme="https://demo.lilidong.cn/cates/%E7%94%9F%E6%B4%BB%E7%8E%A9%E4%B9%90/"/>
     
     
-      <category term="Foo" scheme="https://aotu.io/tags/Foo/"/>
+      <category term="Foo" scheme="https://demo.lilidong.cn/tags/Foo/"/>
     
   </entry>
   
   <entry>
     <title>【译】介绍Sass Maps：用法跟例子</title>
-    <link href="https://aotu.io/notes/2015/12/09/an-introduction-to-sass-maps/"/>
-    <id>https://aotu.io/notes/2015/12/09/an-introduction-to-sass-maps/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/09/an-introduction-to-sass-maps/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/09/an-introduction-to-sass-maps/</id>
     <published>2015-12-09T01:54:16.000Z</published>
     <updated>2016-10-20T07:06:32.407Z</updated>
     
@@ -7621,19 +7621,19 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="sass" scheme="https://aotu.io/tags/sass/"/>
+      <category term="sass" scheme="https://demo.lilidong.cn/tags/sass/"/>
     
-      <category term="sass maps" scheme="https://aotu.io/tags/sass-maps/"/>
+      <category term="sass maps" scheme="https://demo.lilidong.cn/tags/sass-maps/"/>
     
   </entry>
   
   <entry>
     <title>Adobe edge animate制作HTML5动画</title>
-    <link href="https://aotu.io/notes/2015/12/04/edgeAnimate/"/>
-    <id>https://aotu.io/notes/2015/12/04/edgeAnimate/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/12/04/edgeAnimate/"/>
+    <id>https://demo.lilidong.cn/notes/2015/12/04/edgeAnimate/</id>
     <published>2015-12-04T14:05:18.000Z</published>
     <updated>2016-10-20T07:06:32.407Z</updated>
     
@@ -7674,21 +7674,21 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="edge animate" scheme="https://aotu.io/tags/edge-animate/"/>
+      <category term="edge animate" scheme="https://demo.lilidong.cn/tags/edge-animate/"/>
     
-      <category term="html5" scheme="https://aotu.io/tags/html5/"/>
+      <category term="html5" scheme="https://demo.lilidong.cn/tags/html5/"/>
     
-      <category term="animate" scheme="https://aotu.io/tags/animate/"/>
+      <category term="animate" scheme="https://demo.lilidong.cn/tags/animate/"/>
     
   </entry>
   
   <entry>
     <title>精致化页面重构</title>
-    <link href="https://aotu.io/notes/2015/11/24/project-summary/"/>
-    <id>https://aotu.io/notes/2015/11/24/project-summary/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/24/project-summary/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/24/project-summary/</id>
     <published>2015-11-24T12:23:44.000Z</published>
     <updated>2016-10-20T07:06:32.406Z</updated>
     
@@ -7792,17 +7792,17 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="summary" scheme="https://aotu.io/tags/summary/"/>
+      <category term="summary" scheme="https://demo.lilidong.cn/tags/summary/"/>
     
   </entry>
   
   <entry>
     <title>使用ThreeJS在浏览器中展示3D物件</title>
-    <link href="https://aotu.io/notes/2015/11/24/3D-CleaningCream/"/>
-    <id>https://aotu.io/notes/2015/11/24/3D-CleaningCream/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/24/3D-CleaningCream/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/24/3D-CleaningCream/</id>
     <published>2015-11-24T05:00:35.000Z</published>
     <updated>2016-10-20T07:06:32.406Z</updated>
     
@@ -7842,80 +7842,17 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="three.js" scheme="https://aotu.io/tags/three-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以电影之眼看CSS3动画（一）</title>
-    <link href="https://aotu.io/notes/2015/11/23/css3-animation-to-movie-part_1/"/>
-    <id>https://aotu.io/notes/2015/11/23/css3-animation-to-movie-part_1/</id>
-    <published>2015-11-23T09:27:00.000Z</published>
-    <updated>2016-10-20T07:06:32.405Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="以电影之眼看CSS3动画（一）"><a href="#以电影之眼看CSS3动画（一）" class="headerlink" title="以电影之眼看CSS3动画（一）"></a>以电影之眼看CSS3动画（一）</h1><hr>
-<pre><code>注：此文非干货聚集地，来找干货的对不住了。    
-注注：又多又大的图预警！！！
-</code></pre><p><a href="http://isux.tencent.com/css3/index.html" target="_blank" rel="external">CSS3动画</a>的变形基础（transform）包含4种变形方式（translate、rotate、scale、skew），同时还可设置2D、3D、变形原点（transform-origin）、透视（perspective）、透视原点（perspective-origin）等等特性；动画时间频率包含9种基本模式（ease、linear、ease-in、ease-out、ease-in-out、step-start、step-end、steps），甚至还可以使用cubic-bezier写出任何你想要的模式；再加上动画持续时间（animation-duration）等设定，各种排列组合，CSS3动画简直拥有了整个世界！</p>
-<p><img src="//img.aotu.io/lyxuncle/1-1_trandition_animation.png" alt="trandition_animation"></p>
-<ul>
-<li>图片来源《动画的时间掌握》</li>
-</ul>
-<p>根据<a href="http://zh.wikipedia.org/wiki/%E5%8A%A8%E7%94%BB" target="_blank" rel="external">维基</a>的释义，动画是指由许多帧静止的画面，以一定的速度（如每秒16张）连续播放时，肉眼因视觉残象产生错觉，而误以为画面活动的作品（gif图片正是运用这种原理）。因此最初的动画是通过几张快速翻动的连续画面制作而成，而后经历了电影摄影技术的出现、电脑科技的进步，逐渐转向数字化。</p>
-<p><img src="//img.aotu.io/lyxuncle/1-2_bouncing_ball.gif" alt="bouncing_ball"><br><img src="//img.aotu.io/lyxuncle/1-3_boucing_ball_frames.png" alt="boucing_ball_frames"></p>
-<ul>
-<li>将gif拖入PS之后打开时间轴窗口即可看到每一帧的画面</li>
-</ul>
-<p>无论是2D还是3D动画，关键帧，正如其名，是动画制作中最关键的部分，同时也是最难把握的部分。曾经有位设计师告诉我，在大学的第一节flash课的课后作业，老师要求大家上交一份小球动画，包含气球、石头球与皮球，并告诉大家，以相同的外观表现出不同的质感是在考验你对关键帧的悟性，而这一个作业就能体现你是否适合学习动画。</p>
-<p><img src="/img/post/lyxuncle/1-4_quality_of_ball.png" alt="quality_of_ball"></p>
-<blockquote>
-<p>A 需要很大的力才能使一个炮弹移动。一旦它移动了，同样需要很大的力才能阻挡它前进。B 一只汽球只需要很小的力去移动它，但空气阻力使它很快停止动作。这两个例子都画了动作分格线，可以看出在银幕上表现物体的轻重，取决于对它们动作的时间掌握。（图片来源：《动画的时间掌握》）</p>
-</blockquote>
-<p>在<a href="http://cghappening.blogspot.com/2011/02/blog-post_23.html" target="_blank" rel="external">《動畫製作流程介紹》</a>提供的视频中可以看到关键帧在动画制作中所起的地基般的作用。</p>
-<p><img src="//img.aotu.io/lyxuncle/1-5_story_board_of_Monster_Inc.gif" alt="story_board_of_Monster_Inc"></p>
-<ul>
-<li>画面上方的手绘图即为[怪物公司]的关键帧</li>
-</ul>
-<p>与关键帧紧密关联的即为时间轴（或摄制表），时间轴是补齐中间帧不可或缺的一项，在传统动画制作中，导演就是通过制定时间轴来掌控整部动画的节奏。</p>
-<p><img src="//img.aotu.io/lyxuncle/1-6_continuity.jpg" alt="continuity"></p>
-<ul>
-<li>摄制表（图片来源：《动画的时间掌握》）</li>
-</ul>
-<p>在CSS3中，@keyframes正是动画的关键帧容器。@keyframes中包含的包括transform在内的元素形态设定构成了关键帧的画面。@keyframes中的百分比即为时间轴的体现。中间帧则由浏览器自动完成（就像flash中的补全动画）。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.people</span>&#123;<span class="attribute">animation</span>:people linear <span class="number">1.5s</span>;&#125;</div><div class="line">@<span class="keyword">keyframes</span> people&#123;</div><div class="line">	0%, 95%&#123;<span class="attribute">opacity</span>:<span class="number">0</span>;&#125;</div><div class="line">	100%&#123;<span class="attribute">opacity</span>:<span class="number">1</span>;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><img src="//img.aotu.io/lyxuncle/1-7_css3_animation_2.png" alt="css3_animation"></p>
-<ul>
-<li>一个简单的动画关键帧示例</li>
-</ul>
-<p>现在我们知道了CSS3动画的结构与传统动画之间的关系，重点来了， CSS3动画可以做出一部动画电影吗？欲知详情，且听下回分解。</p>
-<h2 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h2><ul>
-<li><a href="http://www.amazon.cn/%E5%8A%A8%E7%94%BB%E7%9A%84%E6%97%B6%E9%97%B4%E6%8E%8C%E6%8F%A1-%E5%93%88%E7%BD%97%E5%BE%B7%E2%80%A2%E5%A8%81%E7%89%B9%E5%85%8B/dp/B0094N5III/ref=sr_1_1?ie=UTF8&amp;qid=1420369719&amp;sr=8-1&amp;keywords=%E5%8A%A8%E7%94%BB%E7%9A%84%E6%97%B6%E9%97%B4%E6%8E%8C%E6%8F%A1" target="_blank" rel="external">《动画的时间掌握（修订版）》</a>[英]哈罗德•威特克；[英]约翰•哈拉斯；[美]汤姆•赛图</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;以电影之眼看CSS3动画（一）&quot;&gt;&lt;a href=&quot;#以电影之眼看CSS3动画（一）&quot; class=&quot;headerlink&quot; title=&quot;以电影之眼看CSS3动画（一）&quot;&gt;&lt;/a&gt;以电影之眼看CSS3动画（一）&lt;/h1&gt;&lt;hr&gt;
-&lt;pre&gt;&lt;code&gt;注：此文非
-    
-    </summary>
-    
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="CSS3" scheme="https://aotu.io/tags/CSS3/"/>
-    
-      <category term="Animation" scheme="https://aotu.io/tags/Animation/"/>
+      <category term="three.js" scheme="https://demo.lilidong.cn/tags/three-js/"/>
     
   </entry>
   
   <entry>
     <title>以电影之眼看CSS3动画（二）</title>
-    <link href="https://aotu.io/notes/2015/11/23/css3-animation-to-movie-part_2/"/>
-    <id>https://aotu.io/notes/2015/11/23/css3-animation-to-movie-part_2/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/23/css3-animation-to-movie-part_2/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/23/css3-animation-to-movie-part_2/</id>
     <published>2015-11-23T09:27:00.000Z</published>
     <updated>2016-10-20T07:06:32.405Z</updated>
     
@@ -8020,19 +7957,82 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS3" scheme="https://aotu.io/tags/CSS3/"/>
+      <category term="CSS3" scheme="https://demo.lilidong.cn/tags/CSS3/"/>
     
-      <category term="Animation" scheme="https://aotu.io/tags/Animation/"/>
+      <category term="Animation" scheme="https://demo.lilidong.cn/tags/Animation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以电影之眼看CSS3动画（一）</title>
+    <link href="https://demo.lilidong.cn/notes/2015/11/23/css3-animation-to-movie-part_1/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/23/css3-animation-to-movie-part_1/</id>
+    <published>2015-11-23T09:27:00.000Z</published>
+    <updated>2016-10-20T07:06:32.405Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="以电影之眼看CSS3动画（一）"><a href="#以电影之眼看CSS3动画（一）" class="headerlink" title="以电影之眼看CSS3动画（一）"></a>以电影之眼看CSS3动画（一）</h1><hr>
+<pre><code>注：此文非干货聚集地，来找干货的对不住了。    
+注注：又多又大的图预警！！！
+</code></pre><p><a href="http://isux.tencent.com/css3/index.html" target="_blank" rel="external">CSS3动画</a>的变形基础（transform）包含4种变形方式（translate、rotate、scale、skew），同时还可设置2D、3D、变形原点（transform-origin）、透视（perspective）、透视原点（perspective-origin）等等特性；动画时间频率包含9种基本模式（ease、linear、ease-in、ease-out、ease-in-out、step-start、step-end、steps），甚至还可以使用cubic-bezier写出任何你想要的模式；再加上动画持续时间（animation-duration）等设定，各种排列组合，CSS3动画简直拥有了整个世界！</p>
+<p><img src="//img.aotu.io/lyxuncle/1-1_trandition_animation.png" alt="trandition_animation"></p>
+<ul>
+<li>图片来源《动画的时间掌握》</li>
+</ul>
+<p>根据<a href="http://zh.wikipedia.org/wiki/%E5%8A%A8%E7%94%BB" target="_blank" rel="external">维基</a>的释义，动画是指由许多帧静止的画面，以一定的速度（如每秒16张）连续播放时，肉眼因视觉残象产生错觉，而误以为画面活动的作品（gif图片正是运用这种原理）。因此最初的动画是通过几张快速翻动的连续画面制作而成，而后经历了电影摄影技术的出现、电脑科技的进步，逐渐转向数字化。</p>
+<p><img src="//img.aotu.io/lyxuncle/1-2_bouncing_ball.gif" alt="bouncing_ball"><br><img src="//img.aotu.io/lyxuncle/1-3_boucing_ball_frames.png" alt="boucing_ball_frames"></p>
+<ul>
+<li>将gif拖入PS之后打开时间轴窗口即可看到每一帧的画面</li>
+</ul>
+<p>无论是2D还是3D动画，关键帧，正如其名，是动画制作中最关键的部分，同时也是最难把握的部分。曾经有位设计师告诉我，在大学的第一节flash课的课后作业，老师要求大家上交一份小球动画，包含气球、石头球与皮球，并告诉大家，以相同的外观表现出不同的质感是在考验你对关键帧的悟性，而这一个作业就能体现你是否适合学习动画。</p>
+<p><img src="/img/post/lyxuncle/1-4_quality_of_ball.png" alt="quality_of_ball"></p>
+<blockquote>
+<p>A 需要很大的力才能使一个炮弹移动。一旦它移动了，同样需要很大的力才能阻挡它前进。B 一只汽球只需要很小的力去移动它，但空气阻力使它很快停止动作。这两个例子都画了动作分格线，可以看出在银幕上表现物体的轻重，取决于对它们动作的时间掌握。（图片来源：《动画的时间掌握》）</p>
+</blockquote>
+<p>在<a href="http://cghappening.blogspot.com/2011/02/blog-post_23.html" target="_blank" rel="external">《動畫製作流程介紹》</a>提供的视频中可以看到关键帧在动画制作中所起的地基般的作用。</p>
+<p><img src="//img.aotu.io/lyxuncle/1-5_story_board_of_Monster_Inc.gif" alt="story_board_of_Monster_Inc"></p>
+<ul>
+<li>画面上方的手绘图即为[怪物公司]的关键帧</li>
+</ul>
+<p>与关键帧紧密关联的即为时间轴（或摄制表），时间轴是补齐中间帧不可或缺的一项，在传统动画制作中，导演就是通过制定时间轴来掌控整部动画的节奏。</p>
+<p><img src="//img.aotu.io/lyxuncle/1-6_continuity.jpg" alt="continuity"></p>
+<ul>
+<li>摄制表（图片来源：《动画的时间掌握》）</li>
+</ul>
+<p>在CSS3中，@keyframes正是动画的关键帧容器。@keyframes中包含的包括transform在内的元素形态设定构成了关键帧的画面。@keyframes中的百分比即为时间轴的体现。中间帧则由浏览器自动完成（就像flash中的补全动画）。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.people</span>&#123;<span class="attribute">animation</span>:people linear <span class="number">1.5s</span>;&#125;</div><div class="line">@<span class="keyword">keyframes</span> people&#123;</div><div class="line">	0%, 95%&#123;<span class="attribute">opacity</span>:<span class="number">0</span>;&#125;</div><div class="line">	100%&#123;<span class="attribute">opacity</span>:<span class="number">1</span>;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="//img.aotu.io/lyxuncle/1-7_css3_animation_2.png" alt="css3_animation"></p>
+<ul>
+<li>一个简单的动画关键帧示例</li>
+</ul>
+<p>现在我们知道了CSS3动画的结构与传统动画之间的关系，重点来了， CSS3动画可以做出一部动画电影吗？欲知详情，且听下回分解。</p>
+<h2 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h2><ul>
+<li><a href="http://www.amazon.cn/%E5%8A%A8%E7%94%BB%E7%9A%84%E6%97%B6%E9%97%B4%E6%8E%8C%E6%8F%A1-%E5%93%88%E7%BD%97%E5%BE%B7%E2%80%A2%E5%A8%81%E7%89%B9%E5%85%8B/dp/B0094N5III/ref=sr_1_1?ie=UTF8&amp;qid=1420369719&amp;sr=8-1&amp;keywords=%E5%8A%A8%E7%94%BB%E7%9A%84%E6%97%B6%E9%97%B4%E6%8E%8C%E6%8F%A1" target="_blank" rel="external">《动画的时间掌握（修订版）》</a>[英]哈罗德•威特克；[英]约翰•哈拉斯；[美]汤姆•赛图</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;以电影之眼看CSS3动画（一）&quot;&gt;&lt;a href=&quot;#以电影之眼看CSS3动画（一）&quot; class=&quot;headerlink&quot; title=&quot;以电影之眼看CSS3动画（一）&quot;&gt;&lt;/a&gt;以电影之眼看CSS3动画（一）&lt;/h1&gt;&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;注：此文非
+    
+    </summary>
+    
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="CSS3" scheme="https://demo.lilidong.cn/tags/CSS3/"/>
+    
+      <category term="Animation" scheme="https://demo.lilidong.cn/tags/Animation/"/>
     
   </entry>
   
   <entry>
     <title>SVG I Know</title>
-    <link href="https://aotu.io/notes/2015/11/20/svg-I-know/"/>
-    <id>https://aotu.io/notes/2015/11/20/svg-I-know/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/20/svg-I-know/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/20/svg-I-know/</id>
     <published>2015-11-20T03:30:45.000Z</published>
     <updated>2016-10-20T07:06:32.404Z</updated>
     
@@ -8110,17 +8110,17 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="svg" scheme="https://aotu.io/tags/svg/"/>
+      <category term="svg" scheme="https://demo.lilidong.cn/tags/svg/"/>
     
   </entry>
   
   <entry>
     <title>Git常用操作总结</title>
-    <link href="https://aotu.io/notes/2015/11/17/Git-Commands/"/>
-    <id>https://aotu.io/notes/2015/11/17/Git-Commands/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/17/Git-Commands/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/17/Git-Commands/</id>
     <published>2015-11-17T04:44:25.000Z</published>
     <updated>2016-10-20T07:06:32.404Z</updated>
     
@@ -8179,7 +8179,7 @@ $ git merge dev
 $ git branch -d dev
 </code></pre><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><pre><code>$ git tag 0.1.1
 $ git push origin --tags
-</code></pre><p>注意：本文Fork自 <a href="http://yikun.github.io/" target="_blank" rel="external">yikun.github.io</a>，<a href="http://aotu.io">凹凸实验室</a>作进一步完善。</p>
+</code></pre><p>注意：本文Fork自 <a href="http://yikun.github.io/" target="_blank" rel="external">yikun.github.io</a>，<a href="http://aotu.io" target="_blank" rel="external">凹凸实验室</a>作进一步完善。</p>
 ]]></content>
     
     <summary type="html">
@@ -8188,17 +8188,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Git" scheme="https://aotu.io/tags/Git/"/>
+      <category term="Git" scheme="https://demo.lilidong.cn/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>101%还原</title>
-    <link href="https://aotu.io/notes/2015/11/16/101-percent/"/>
-    <id>https://aotu.io/notes/2015/11/16/101-percent/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/16/101-percent/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/16/101-percent/</id>
     <published>2015-11-16T13:39:14.000Z</published>
     <updated>2016-10-20T07:06:32.404Z</updated>
     
@@ -8343,17 +8343,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="设计理念还原" scheme="https://aotu.io/tags/%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5%E8%BF%98%E5%8E%9F/"/>
+      <category term="设计理念还原" scheme="https://demo.lilidong.cn/tags/%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5%E8%BF%98%E5%8E%9F/"/>
     
   </entry>
   
   <entry>
     <title>基于phantomJs的网络爬虫</title>
-    <link href="https://aotu.io/notes/2015/11/11/phantomJs-crawler/"/>
-    <id>https://aotu.io/notes/2015/11/11/phantomJs-crawler/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/11/phantomJs-crawler/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/11/phantomJs-crawler/</id>
     <published>2015-11-11T01:59:33.000Z</published>
     <updated>2016-10-20T07:06:32.403Z</updated>
     
@@ -8410,19 +8410,19 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="PhantomJS" scheme="https://aotu.io/tags/PhantomJS/"/>
+      <category term="PhantomJS" scheme="https://demo.lilidong.cn/tags/PhantomJS/"/>
     
-      <category term="Crawler" scheme="https://aotu.io/tags/Crawler/"/>
+      <category term="Crawler" scheme="https://demo.lilidong.cn/tags/Crawler/"/>
     
   </entry>
   
   <entry>
     <title>css层叠顺序探究</title>
-    <link href="https://aotu.io/notes/2015/11/08/css-stack-order/"/>
-    <id>https://aotu.io/notes/2015/11/08/css-stack-order/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/08/css-stack-order/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/08/css-stack-order/</id>
     <published>2015-11-08T03:44:25.000Z</published>
     <updated>2016-10-20T07:06:32.403Z</updated>
     
@@ -8563,17 +8563,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="CSS" scheme="https://aotu.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://demo.lilidong.cn/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>Service Workers：采用WebP动态响应图片</title>
-    <link href="https://aotu.io/notes/2015/11/06/webp-responsive-image/"/>
-    <id>https://aotu.io/notes/2015/11/06/webp-responsive-image/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/06/webp-responsive-image/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/06/webp-responsive-image/</id>
     <published>2015-11-06T10:44:25.000Z</published>
     <updated>2016-10-20T07:06:32.402Z</updated>
     
@@ -8617,17 +8617,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="性能优化" scheme="https://aotu.io/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://demo.lilidong.cn/cates/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="WebP" scheme="https://aotu.io/tags/WebP/"/>
+      <category term="WebP" scheme="https://demo.lilidong.cn/tags/WebP/"/>
     
   </entry>
   
   <entry>
     <title>使用Adobe FLASH CC制作Canvas动画</title>
-    <link href="https://aotu.io/notes/2015/11/02/flash-canvas/"/>
-    <id>https://aotu.io/notes/2015/11/02/flash-canvas/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/11/02/flash-canvas/"/>
+    <id>https://demo.lilidong.cn/notes/2015/11/02/flash-canvas/</id>
     <published>2015-11-02T10:44:25.000Z</published>
     <updated>2016-10-20T07:06:32.402Z</updated>
     
@@ -8690,19 +8690,19 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Flash" scheme="https://aotu.io/tags/Flash/"/>
+      <category term="Flash" scheme="https://demo.lilidong.cn/tags/Flash/"/>
     
-      <category term="Canvas" scheme="https://aotu.io/tags/Canvas/"/>
+      <category term="Canvas" scheme="https://demo.lilidong.cn/tags/Canvas/"/>
     
   </entry>
   
   <entry>
     <title>前方有坑，请绕道——Zepto 中使用 CORS</title>
-    <link href="https://aotu.io/notes/2015/10/26/zepto-cors/"/>
-    <id>https://aotu.io/notes/2015/10/26/zepto-cors/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/10/26/zepto-cors/"/>
+    <id>https://demo.lilidong.cn/notes/2015/10/26/zepto-cors/</id>
     <published>2015-10-26T04:24:22.000Z</published>
     <updated>2016-10-20T07:06:32.402Z</updated>
     
@@ -8791,19 +8791,19 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Zepto" scheme="https://aotu.io/tags/Zepto/"/>
+      <category term="Zepto" scheme="https://demo.lilidong.cn/tags/Zepto/"/>
     
-      <category term="CORS" scheme="https://aotu.io/tags/CORS/"/>
+      <category term="CORS" scheme="https://demo.lilidong.cn/tags/CORS/"/>
     
   </entry>
   
   <entry>
     <title>探究transform动画元素的z-index</title>
-    <link href="https://aotu.io/notes/2015/10/21/z-index-and-translate3d/"/>
-    <id>https://aotu.io/notes/2015/10/21/z-index-and-translate3d/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/10/21/z-index-and-translate3d/"/>
+    <id>https://demo.lilidong.cn/notes/2015/10/21/z-index-and-translate3d/</id>
     <published>2015-10-21T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.401Z</updated>
     
@@ -8846,19 +8846,19 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="translate3d" scheme="https://aotu.io/tags/translate3d/"/>
+      <category term="translate3d" scheme="https://demo.lilidong.cn/tags/translate3d/"/>
     
-      <category term="zindex" scheme="https://aotu.io/tags/zindex/"/>
+      <category term="zindex" scheme="https://demo.lilidong.cn/tags/zindex/"/>
     
   </entry>
   
   <entry>
     <title>我的vim二三事</title>
-    <link href="https://aotu.io/notes/2015/10/16/vim-list/"/>
-    <id>https://aotu.io/notes/2015/10/16/vim-list/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/10/16/vim-list/"/>
+    <id>https://demo.lilidong.cn/notes/2015/10/16/vim-list/</id>
     <published>2015-10-16T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.401Z</updated>
     
@@ -8958,17 +8958,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Web开发" scheme="https://aotu.io/tags/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/tags/Web%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>PostCSS快速入门使用</title>
-    <link href="https://aotu.io/notes/2015/10/13/start-postcss/"/>
-    <id>https://aotu.io/notes/2015/10/13/start-postcss/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/10/13/start-postcss/"/>
+    <id>https://demo.lilidong.cn/notes/2015/10/13/start-postcss/</id>
     <published>2015-10-13T01:34:25.000Z</published>
     <updated>2016-10-20T07:06:32.401Z</updated>
     
@@ -9068,17 +9068,17 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="Web开发" scheme="https://aotu.io/cates/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/cates/Web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Web开发" scheme="https://aotu.io/tags/Web%E5%BC%80%E5%8F%91/"/>
+      <category term="Web开发" scheme="https://demo.lilidong.cn/tags/Web%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>凹凸实验室博客V1.0.0发布</title>
-    <link href="https://aotu.io/notes/2015/10/08/aotu-blog-v1/"/>
-    <id>https://aotu.io/notes/2015/10/08/aotu-blog-v1/</id>
+    <link href="https://demo.lilidong.cn/notes/2015/10/08/aotu-blog-v1/"/>
+    <id>https://demo.lilidong.cn/notes/2015/10/08/aotu-blog-v1/</id>
     <published>2015-10-08T02:24:35.000Z</published>
     <updated>2016-10-20T07:06:32.400Z</updated>
     
@@ -9147,12 +9147,12 @@ $ git push origin --tags
     
     </summary>
     
-      <category term="项目总结" scheme="https://aotu.io/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/cates/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="Hexo" scheme="https://aotu.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://demo.lilidong.cn/tags/Hexo/"/>
     
-      <category term="项目总结" scheme="https://aotu.io/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://demo.lilidong.cn/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
